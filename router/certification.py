@@ -45,6 +45,10 @@ def write_certification():
         + Đạt GCN sinh viên xuất sắc lớp "Cảm tình Đảng" năm 2024
         + Đạt GCN sự kiện "Math Open Day 2024"
         + Đạt GCN hội thi cấp trường "Olympic tiếng anh lần VI" năm 2024
+
+        ### 6. Tốt nghiệp khóa học:
+        + Khóa học thực chiến "Thiết kế Website với Python Django"
+        + Khóa học thực chiến "Xây dựng hệ thống bồi thường bảo hiểm Java Spring"
+        + Khóa học thực chiến "Lập trình Android với Java và Kotlin" 
         """
     )
-    
