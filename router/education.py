@@ -50,7 +50,7 @@ def write_education():
                 <h4>2018 - 2021: Trường THPT Thăng Long - Hà Nội</h4>
                 <p>Học sinh trung học phổ thông tại trường</p>
                 <ul style="margin-top: 0;">
-                    <li>Lớp chuyên: ban T (Toán - Lý - Hóa - Sinh)</li>
+                    <li>Lớp chuyên: ban T3 (Toán - Lý - Hóa - Sinh)</li>
                     <li>Khối xét tuyển: A01 (Toán - Lý - Anh)</li>
                     <li>Tổng điểm: 26.4/30</li>
                 </ul>

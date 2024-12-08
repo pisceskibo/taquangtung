@@ -3,7 +3,7 @@ import streamlit as st
 
 # Xuất Modulo
 from router.function import make_circle
-from router import introduction, education, experience, project
+from router import introduction, education, experience, project, activities, certification
 
 
 # Avatar tại Sidebar
@@ -19,14 +19,18 @@ st.title(menu)
 
 
 # Định tuyến tương ứng của Sidebar
-if menu == "Introduction":
-    introduction.write_introduction()
-elif menu == "Education":
+if menu == "Education":
     education.write_education()
 elif menu == "Experience":
     experience.write_experience()
 elif menu == "Projects":
     project.write_project()
+elif menu == "Activities":
+    activities.write_activitiy()
+elif menu == "Certifications":
+    certification.write_certification()
+else:
+    introduction.write_introduction()
 
 
 # Footer with social media icons
