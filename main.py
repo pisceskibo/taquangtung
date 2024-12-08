@@ -2,7 +2,8 @@
 import streamlit as st 
 
 # Xuất Modulo
-from function import make_circle
+from router.function import make_circle
+from router import introduction, education, experience, project
 
 
 # Avatar tại Sidebar
@@ -11,10 +12,22 @@ image_avatar = make_circle(image_path_avatar)
 st.sidebar.image(image_avatar, caption = "Tạ Quang Tùng", use_column_width = True)
 
 # Các đầu mục Sidebar
-menu = st.sidebar.selectbox("Giới thiệu chung", 
-                            ["Introduction", "Education", "Experience", "Activities", 
-                             "Certifications", "Contact"])
+menu = st.sidebar.selectbox("Giới thiệu chung (Overview)", 
+                            ["Introduction", "Education", "Experience", "Projects",
+                             "Activities", "Certifications"])
 st.title(menu)
+
+
+# Định tuyến tương ứng của Sidebar
+if menu == "Introduction":
+    introduction.write_introduction()
+elif menu == "Education":
+    education.write_education()
+elif menu == "Experience":
+    experience.write_experience()
+elif menu == "Projects":
+    project.write_project()
+
 
 # Footer with social media icons
 st.sidebar.markdown(
