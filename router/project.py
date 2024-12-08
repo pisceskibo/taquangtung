@@ -4,8 +4,15 @@ import streamlit as st
 # Nội dung projects
 def write_project():
     st.write(
-        """<hr style="border: 1px solid #ccc;""", unsafe_allow_html=True
+        """<hr style="border: 1px solid #ccc;">""", unsafe_allow_html=True
     )
+
+    st.write(
+    """ 
+    <div style="text-align: center;">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pisceskibo&theme=radical&hide_border=false&include_all_commits=false&count_private=false&layout=compact" alt="Most Used Languages" style="width: 70%;">
+    </div>
+    """, unsafe_allow_html=True)
 
     st.write(
         """
