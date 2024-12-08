@@ -14,7 +14,7 @@ def write_experience():
         + Thời gian hoạt động: 2021 - nay
         + Nhiệm vụ: Quản lý và tổ chức các hoạt động về mảng truyền thông của Khoa 
         """)
-    st.image("Image/mimmedia.jpg", caption="CLB MIM Media")
+    st.image("image/mimmedia.jpg", caption="CLB MIM Media")
 
     st.write("""
         ### 2. CLB Toán Tin - HAMIC:
@@ -26,7 +26,7 @@ def write_experience():
             + Tổ chức hoạt động giảng dạy những kỹ năng chuyên môn về Lập trình
             + Tổ chức cuộc thi Lập trình Web và Phân tích dữ liệu lớn
         """)
-    st.image("Image/hamic.jpg", caption="CLB Toán Tin - HAMIC")
+    st.image("image/hamic.jpg", caption="CLB Toán Tin - HAMIC")
 
     st.write(
         """
@@ -35,7 +35,7 @@ def write_experience():
         + Thời gian hoạt động: 2023 - nay
         + Nhiệm vụ: Thiết kế ấn phẩm và Đầu mối sự kiện
         """)
-    st.image("Image/mim.jpg", caption="Khoa Toán - Cơ - Tin học")
+    st.image("image/mim.jpg", caption="Khoa Toán - Cơ - Tin học")
 
     st.write(
         """
@@ -46,7 +46,7 @@ def write_experience():
             + Quản lý và phát triển thuật toán tối ưu hóa chiến lược định kỳ
             + Phân tích và xây dựng Website trực quan hóa dữ liệu
         """)
-    st.image("Image/smartlog.jpg", caption="Công ty Smartlog")
+    st.image("image/smartlog.jpg", caption="Công ty Smartlog")
 
     st.write(
         """
@@ -57,4 +57,4 @@ def write_experience():
             + Phân tích và thiết kế hệ thống Website
             + Xây dựng và bảo trì dự án
         """)
-    st.image("Image/rikkei.jpg", caption="Công ty Rikkeisoft")
+    st.image("image/rikkei.jpg", caption="Công ty Rikkeisoft")
