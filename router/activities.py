@@ -28,10 +28,10 @@ def write_activitiy():
         + Tình nguyện viên "Cuộc thi Toán học VMTC 2023" do Khoa Toán - Cơ - Tin học
         + Tình nguyện viên hỗ trợ "Mùa hè xanh 2023" do Khoa Toán - Cơ - Tin học & Khoa Sinh học
 
-        ### 3. Năm 2024
+        ### 3. Năm 2024:
         + Ban tổ chức sự kiện "Giải bóng đá MIM Cup 2024" do Khoa Toán - Cơ - Tin học
         + Ban tổ chức sự kiện "Team Building 2024" do Khoa Toán - Cơ - Tin học
         + Ban tổ chức sự kiện "HUS Cheerleading 2024" do Trường Đại học Khoa học Tự nhiên
-        + Ban tổ chức sự kiện DataFlow 2024
+        + Phó trưởng ban tổ chức cuộc thi "DataFlow 2025" do CLB HAMIC & CLB MIM Media
         """
     )
