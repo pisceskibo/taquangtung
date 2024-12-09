@@ -48,7 +48,7 @@ def write_certification():
 
         ### 6. Tốt nghiệp khóa học:
         + Khóa học thực chiến "Thiết kế Website với Python Django"
-        + Khóa học thực chiến "Xây dựng hệ thống bồi thường bảo hiểm Java Spring"
+        + Khóa học thực chiến "Xây dựng hệ thống Website với Java Spring"
         + Khóa học thực chiến "Lập trình Android với Java và Kotlin" 
         """
     )
