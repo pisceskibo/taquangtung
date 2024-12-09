@@ -1,4 +1,4 @@
 # Portfolio Website
 + Language: Python
 + Framework: Streamlit
-+ Deploy: Github
++ Deploy: Streamlit Community Cloud
