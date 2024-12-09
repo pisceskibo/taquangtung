@@ -1,5 +1,5 @@
 # Portfolio Website
-+ Language: Python
++ Programming Language: Python
 + Framework: Streamlit
-+ Deploy: Streamlit Community Cloud
++ Deployment: [Streamlit Community Cloud](https://streamlit.io/cloud)
 + Demo: https://taquangtung.streamlit.app/ 
