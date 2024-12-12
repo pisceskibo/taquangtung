@@ -35,5 +35,6 @@ def write_activitiy():
 
         ## 4. Năm 2025
         + Phó trưởng ban tổ chức cuộc thi "DataFlow 2025" do CLB HAMIC & CLB MIM Media
+        + Một số hoạt động khác ...
         """
     )
