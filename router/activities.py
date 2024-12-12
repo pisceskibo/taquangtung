@@ -32,6 +32,8 @@ def write_activitiy():
         + Ban tổ chức sự kiện "Giải bóng đá MIM Cup 2024" do Khoa Toán - Cơ - Tin học
         + Ban tổ chức sự kiện "Team Building 2024" do Khoa Toán - Cơ - Tin học
         + Ban tổ chức sự kiện "HUS Cheerleading 2024" do Trường Đại học Khoa học Tự nhiên
+
+        ## 4. Năm 2025
         + Phó trưởng ban tổ chức cuộc thi "DataFlow 2025" do CLB HAMIC & CLB MIM Media
         """
     )
