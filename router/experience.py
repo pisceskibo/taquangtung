@@ -58,3 +58,14 @@ def write_experience():
             + Xây dựng và bảo trì dự án
         """)
     st.image("image/rikkei.jpg", caption="Công ty Rikkeisoft")
+
+    st.write(
+        """
+        ### 6. Công ty GTS - Green Technology and System:
+        + Chức vụ: Lập trình viên Python (Python Developer)
+        + Thời gian: 12/2024 - nay
+        + Nhiệm vụ: 
+            + Phân tích và thiết kế hệ thống Window
+            + Xây dựng và quản trị hệ thống dự án
+        """)
+    st.image("image/gtsystem.jpg", caption="Công ty GTS - Green Technology and System")
