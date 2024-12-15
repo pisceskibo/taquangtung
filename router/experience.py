@@ -41,7 +41,7 @@ def write_experience():
         """
         ### 4. Công ty Smartlog:
         + Chức vụ: Lập trình viên Python (Python Developer)
-        + Thời gian: 07/2023 - 10/2023
+        + Thời gian: 09/2023 - 12/2023
         + Nhiệm vụ: 
             + Quản lý và phát triển thuật toán tối ưu hóa chiến lược định kỳ
             + Phân tích và xây dựng Website trực quan hóa dữ liệu
