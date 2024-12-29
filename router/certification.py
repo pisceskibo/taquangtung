@@ -42,11 +42,16 @@ def write_certification():
         + Đạt GCN "Hành trình Sinh viên 5 Tốt - Bứt phá để thành công" năm 2022
         + Đạt GCN cuộc thi "Tự hào màu áo xanh" năm 2023
         + Đạt GCN thí sinh xuất sắc cuộc thi "Simple Science 2023"
+        + Đạt GCN cuộc thi "Tìm hiểu Tư tưởng Hồ Chí Minh" năm 2023 - 2024
+        + Đạt GCN cuộc thi "Tìm hiểu Văn hóa các nước Đông Nam Á" năm 2023 - 2024
+        + Đạt GCN cuộc thi "Tìm hiểu Nghị quyết Đại hội đại biểu toàn quốc Hội Sinh viên Việt Nam lần thứ XI, nhiệm kỳ 2023 - 2028"
         + Đạt GCN cuộc thi "Con đường ánh sáng lần VII" năm 2024
         + Đạt GCN cuộc thi "Cùng hội rèn luyện để bản lĩnh hơn" năm 2024
         + Đạt GCN sinh viên xuất sắc lớp "Cảm tình Đảng" năm 2024
         + Đạt GCN sự kiện "Math Open Day 2024"
         + Đạt GCN hội thi cấp trường "Olympic tiếng anh lần VI" năm 2024
+        + Đạt GCN hoạt động "Rèn luyện để Bản lĩnh hơn - Triết học MacLenin" năm 2024
+        + Đạt GCN hoạt động "Rèn luyện để Hội nhập tốt hơn" năm 2024
 
         ### 6. Tốt nghiệp khóa học:
         + Khóa học thực chiến "Thiết kế Website với Python Django"
