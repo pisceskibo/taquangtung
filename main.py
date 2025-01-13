@@ -9,7 +9,7 @@ from router import introduction, education, experience, project, activities, cer
 # Avatar tại Sidebar
 image_path_avatar = "image/avatarTQT.png"
 image_avatar = make_circle(image_path_avatar)
-st.sidebar.image(image_avatar, caption = "Tạ Quang Tùng", use_container_width = True)
+st.sidebar.image(image_avatar, caption = "Tạ Quang Tùng")
 
 # Các đầu mục Sidebar
 menu = st.sidebar.selectbox("Giới thiệu chung (Overview)", 

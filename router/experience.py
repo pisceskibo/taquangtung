@@ -11,7 +11,7 @@ def write_experience():
         """
         ### 1. CLB MIM Media:
         + Chức vụ: Phó Chủ nhiệm CLB
-        + Thời gian hoạt động: 2021 - nay
+        + Thời gian hoạt động: 10/2021 - nay
         + Nhiệm vụ: Quản lý và tổ chức các hoạt động về mảng truyền thông của Khoa 
         """)
     st.image("image/mimmedia.jpg", caption="CLB MIM Media")
@@ -20,7 +20,7 @@ def write_experience():
         ### 2. CLB Toán Tin - HAMIC:
         + Chức vụ: Trưởng nhóm
         + Ban chuyên môn: Ban thiết kế và Lập trình Web
-        + Thời gian hoạt động: 2022 - 2024
+        + Thời gian hoạt động: 12/2022 - 08/2024
         + Nhiệm vụ: 
             + Thiết kế giao diện Website cho các đơn vị tổ chức
             + Tổ chức hoạt động giảng dạy những kỹ năng chuyên môn về Lập trình
@@ -32,7 +32,7 @@ def write_experience():
         """
         ### 3. Khoa Toán - Cơ - Tin học:
         + Chức vụ: Ủy viên BCH Liên Chi Hội 
-        + Thời gian hoạt động: 2023 - nay
+        + Thời gian hoạt động: 08/2023 - 01/2025
         + Nhiệm vụ: Thiết kế ấn phẩm và Đầu mối sự kiện
         """)
     st.image("image/mim.jpg", caption="Khoa Toán - Cơ - Tin học")
@@ -41,7 +41,7 @@ def write_experience():
         """
         ### 4. Công ty Smartlog:
         + Chức vụ: Lập trình viên Python (Python Developer)
-        + Thời gian: 09/2023 - 12/2023
+        + Thời gian: 12/2022 - 02/2023
         + Nhiệm vụ: 
             + Quản lý và phát triển thuật toán tối ưu hóa chiến lược định kỳ
             + Phân tích và xây dựng Website trực quan hóa dữ liệu
@@ -52,7 +52,7 @@ def write_experience():
         """
         ### 5. Công ty Rikkeisoft:
         + Chức vụ: Lập trình viên Python (Python Developer)
-        + Thời gian: 04/2024 - 10/2024
+        + Thời gian: 05/2024 - 10/2024
         + Nhiệm vụ: 
             + Phân tích và thiết kế hệ thống Website
             + Xây dựng và bảo trì dự án

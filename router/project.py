@@ -41,5 +41,10 @@ def write_project():
         + Programming Language: Python
         + Framework: FastAPI
         + Link mô tả: https://github.com/pisceskibo/TimeChecking 
+
+        ### 5. CREDIT CARD APPROVAL PREDICTION:
+        + Project: Hệ thống phân tích và dự đoán mô hình phê duyệt thẻ tín dụng
+        + Programming Language: Python
+        + Link mô tả: https://github.com/pisceskibo/CreditCardApprovalPrediction 
         """
     )
