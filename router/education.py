@@ -49,6 +49,7 @@ def write_education():
             <div style="background-color: #FFA07A; padding: 10px; border-radius: 6px; position: relative;">
                 <h4>2018 - 2021: Trường THPT Thăng Long - Hà Nội</h4>
                 <p>Học sinh trung học phổ thông tại trường</p>
+                <p>Thí sinh đạt giải khuyến khích đội tuyển Olympic Toán học cấp trường năm 2020</p>
                 <ul style="margin-top: 0;">
                     <li>Lớp chuyên: ban T3 (Toán - Lý - Hóa - Sinh)</li>
                     <li>Khối xét tuyển: A01 (Toán - Lý - Anh)</li>
