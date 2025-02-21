@@ -52,7 +52,7 @@ def write_experience():
         """
         ### 5. Công ty Rikkeisoft:
         + Chức vụ: Lập trình viên Python (Python Developer)
-        + Thời gian: 05/2024 - 10/2024
+        + Thời gian: 05/2024 - 09/2024
         + Nhiệm vụ: 
             + Phân tích và thiết kế hệ thống Website
             + Xây dựng và bảo trì dự án
