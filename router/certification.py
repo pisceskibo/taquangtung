@@ -52,6 +52,7 @@ def write_certification():
         + Đạt GCN hội thi cấp trường "Olympic tiếng anh lần VI" năm 2024
         + Đạt GCN hoạt động "Rèn luyện để Bản lĩnh hơn - Triết học MacLenin" năm 2024
         + Đạt GCN hoạt động "Rèn luyện để Hội nhập tốt hơn" năm 2024
+        + Đạt GCN thể lực "Sinh viên khoẻ" năm 2024
 
         ### 6. Tốt nghiệp khóa học:
         + Khóa học thực chiến "Thiết kế Website với Python Django"
