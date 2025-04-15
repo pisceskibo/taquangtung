@@ -32,7 +32,7 @@ def write_education():
         <li style="position: relative; padding-left: 40px; margin-bottom: 20px;">
             <div style="background-color: #ADD8E6; padding: 10px; border-radius: 6px; position: relative;">
                 <h4>2010 - 2014: Trường Tiểu học Tô Hoàng - Hà Nội</h4>
-                <p>Học sinh tiểu học tại trường</p>
+                <p>Học sinh lớp chuyên D tiểu học tại trường</p>
             </div>
             <div style="position: absolute; left: 0; top: 10px; width: 20px; height: 20px; border-radius: 50%; background-color: #00bfff;"></div>
             <div style="position: absolute; left: 9px; top: 18px; width: 2px; height: 100%; background-color: #00bfff;"></div>

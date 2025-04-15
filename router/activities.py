@@ -18,6 +18,7 @@ def write_activitiy():
         + Ban tổ chức sự kiện "Team Building 2022" do Khoa Toán - Cơ - Tin học
         + Ban tổ chức sự kiện "VNU Science Fair 2022" do Trường Đại học Khoa học Tự nhiên
         + Tình nguyện viên cuộc thi "Lớp tôi là số 1" năm 2022
+        + Tình nguyện viên hỗ trợ tân sinh viên K67 Khoa Toán - Cơ - Tin học năm 2022
         + Tình nguyện viên hỗ trợ "Mùa hè xanh 2022" do Khoa Toán - Cơ - Tin học
 
         ### 2. Năm 2023:
@@ -26,10 +27,12 @@ def write_activitiy():
         + Ban tổ chức sự kiện "Ngày hội chào tân Meliora 2023" do Trường Đại học Khoa học Tự nhiên 
         + Ban tổ chức sự kiện "Team Building 2023" do Khoa Toán - Cơ - Tin học
         + Tình nguyện viên "Cuộc thi Toán học VMTC 2023" do Khoa Toán - Cơ - Tin học
+        + Tình nguyện viên cuộc thi "Lớp tôi là số 1" năm 2023
+        + Tình nguyện viên hỗ trợ tân sinh viên K68 Khoa Toán - Cơ - Tin học năm 2023
         + Tình nguyện viên hỗ trợ "Mùa hè xanh 2023" do Khoa Toán - Cơ - Tin học & Khoa Sinh học
 
         ### 3. Năm 2024:
-        + Phó trưởng ban Chỉ đạo Đội tình nguyện MIM24 trong chiến dịch "Sắc xanh Tự nhiên" năm 2024
+        + Phó trưởng ban Chỉ đạo Đội tình nguyện MIM24 trong chiến dịch "Sắc xanh Tự nhiên" tại Hòa Bình năm 2024
         + Ban tổ chức sự kiện "Giải bóng đá MIM Cup 2024" do Khoa Toán - Cơ - Tin học
         + Ban tổ chức sự kiện "Team Building 2024" do Khoa Toán - Cơ - Tin học
         + Ban tổ chức sự kiện "HUS Cheerleading 2024" do Trường Đại học Khoa học Tự nhiên
