@@ -13,7 +13,7 @@ def write_education():
         + Trường: Đại học Khoa học Tự nhiên - ĐHQGHN
         + Chuyên ngành: Toán Tin (Mathematics and Computer Science)
         + GPA: 3.4/4.0 (Loại Giỏi)
-        + Điểm rèn luyện: 93/100 (Xuất sắc)
+        + Điểm rèn luyện: 94/100 (Xuất sắc)
         """
     )
 
