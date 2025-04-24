@@ -57,6 +57,7 @@ def write_certification():
         ### 6. Giải thưởng:
         + Giải nhất cuộc thi "Lớp tôi là số 1" năm 2023
         + Giải nhì Hội nghị Khoa học sinh viên Khoa Toán - Cơ - Tin học năm 2025
+        + Giải ba Hội nghị Khoa học sinh viên cấp trường Đại học Khoa học Tự nhiên năm 2025
 
         ### 7. Tốt nghiệp khóa học:
         + Khóa học thực chiến "Thiết kế Website với Python Django"
