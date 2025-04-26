@@ -11,7 +11,7 @@ def write_experience():
         """
         ### 1. CLB MIM Media:
         + Chức vụ: Phó Chủ nhiệm CLB
-        + Thời gian hoạt động: 10/2021 - nay
+        + Thời gian hoạt động: 10/2021 - 04/2025
         + Nhiệm vụ: Quản lý và tổ chức các hoạt động về mảng truyền thông của Khoa 
         """)
     st.image("image/mimmedia.jpg", caption="CLB MIM Media")
