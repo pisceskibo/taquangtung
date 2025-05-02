@@ -44,8 +44,8 @@ st.sidebar.markdown(
         <a href="https://www.instagram.com/pisceskibo/" target="_blank" style="text-decoration: none;">
             <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram" style="width: 30px; height: 30px; margin-right: 10px;"/>
         </a>
-        <a href="https://www.tiktok.com/@pisceskibo" target="_blank" style="text-decoration: none;">
-            <img src="https://cdn-icons-png.flaticon.com/512/3046/3046122.png" alt="TikTok" style="width: 30px; height: 30px;"/>
+        <a href="https://www.linkedin.com/in/pisces-kibo/" target="_blank" style="text-decoration: none;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" style="width: 30px; height: 30px; margin-right: 10px;"/>
         </a>
         <a href="https://github.com/pisceskibo" target="_blank" style="text-decoration: none;">
             <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" style="width: 30px; height: 30px;"/>
