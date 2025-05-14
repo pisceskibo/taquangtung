@@ -3,9 +3,7 @@ import streamlit as st
 
 # Nội dung projects
 def write_project():
-    st.write(
-        """<hr style="border: 1px solid #ccc;">""", unsafe_allow_html=True
-    )
+    st.write("""<hr style="border: 1px solid #ccc;">""", unsafe_allow_html=True)
 
     st.write(
     """ 
@@ -53,8 +51,9 @@ def write_project():
         ---
 
         ### 5. CREDIT CARD APPROVAL PREDICTION:
-        + Project: Hệ thống phân tích và dự đoán mô hình phê duyệt thẻ tín dụng
-        + Programming Language: Python
+        + Project: Hệ thống phân tích và dự đoán mô hình phê duyệt thẻ tín dụng ngân hàng
+        + Programming Language: Python, Cython
+        + Framework: Streamlit
         + Link mô tả: https://github.com/pisceskibo/CreditCardApprovalPrediction 
         """
     )
