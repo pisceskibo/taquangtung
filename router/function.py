@@ -1,7 +1,6 @@
 # Thư viện cần thiết
 from PIL import Image, ImageDraw
 
-
 # Hàm để tạo ảnh hình tròn
 def make_circle(image_path):
     img = Image.open(image_path).convert("RGBA")
