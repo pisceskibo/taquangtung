@@ -11,10 +11,10 @@ def write_introduction():
     """
     ### 1. Tổng quan:
     <div style="text-align: justify;">
-        Sinh viên mới ra trường có đam mê và quan tâm đến lĩnh vực CNTT và phát triển phần mềm. Thuộc 
-        tuýp người thích tìm tòi, sáng tạo và có những ý tưởng đột phá khi lên kế hoạch để giải
-        quyết các vấn đề xung quanh công việc và cuộc sống hàng ngày. Có mong muốn định hướng 
-        làm Kỹ sư phát triển phần mềm hoặc Lập trình viên Python FullStack.
+        Tôi là cử nhân chuyên ngành Toán Tin, có nền tảng vững chắc về Công nghệ Thông tin và đặc biệt 
+        quan tâm đến lĩnh vực xây dựng phát triển phần mềm. Là người ham học hỏi, yêu thích sáng tạo và 
+        luôn chủ động tìm kiếm giải pháp hiệu quả cho các vấn đề thực tiễn. Tôi có định hướng trở thành 
+        Lập trình viên Python FullStack với khả năng phát triển ứng dụng đa lĩnh vực chuyên môn.
     </div>
     <br>
 
