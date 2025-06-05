@@ -29,7 +29,7 @@ def caculate_year_experience(time_space):
 
     # Chuyển đổi sang X năm Y tháng
     years = total_months // 12
-    months = total_months % 12
+    months = total_months % 12 + 1
 
     if years == 0:
         return f"{months} tháng"
