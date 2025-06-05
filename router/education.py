@@ -12,7 +12,7 @@ def write_education():
         ### 1. Trình độ hiện tại:
         + Trường: Đại học Khoa học Tự nhiên - ĐHQGHN
         + Chuyên ngành: Toán Tin (Mathematics and Computer Science)
-        + GPA: 3.4/4.0 (Loại Giỏi)
+        + GPA: 3.43/4.00 (Loại Giỏi)
         + Điểm rèn luyện: 94/100 (Xuất sắc)
         """
     )

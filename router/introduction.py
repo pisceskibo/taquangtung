@@ -11,7 +11,7 @@ def write_introduction():
     """
     ### 1. Tổng quan:
     <div style="text-align: justify;">
-        Sinh viên năm cuối có đam mê và quan tâm đến lĩnh vực CNTT và phát triển phần mềm. Thuộc 
+        Sinh viên mới ra trường có đam mê và quan tâm đến lĩnh vực CNTT và phát triển phần mềm. Thuộc 
         tuýp người thích tìm tòi, sáng tạo và có những ý tưởng đột phá khi lên kế hoạch để giải
         quyết các vấn đề xung quanh công việc và cuộc sống hàng ngày. Có mong muốn định hướng 
         làm Kỹ sư phát triển phần mềm hoặc Lập trình viên Python FullStack.
