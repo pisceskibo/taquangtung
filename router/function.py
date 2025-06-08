@@ -25,13 +25,16 @@ def caculate_year_experience(time_space):
     else:
         end_datetime = datetime.strptime(end_time, "%m/%Y")
     
-    total_months = (end_datetime.year - start_datetime.year) * 12 + (end_datetime.month - start_datetime.month)
+    total_months = (end_datetime.year - start_datetime.year) * 12 + (end_datetime.month - start_datetime.month) + 1
 
     # Chuyển đổi sang X năm Y tháng
     years = total_months // 12
-    months = total_months % 12 + 1
+    months = total_months % 12
 
     if years == 0:
         return f"{months} tháng"
     else:
-        return f"{years} năm, {months} tháng"
+        if months == 0:
+            return f"{years} năm"
+        else:
+            return f"{years} năm, {months} tháng"
