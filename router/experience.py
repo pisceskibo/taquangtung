@@ -81,6 +81,6 @@ def write_experience():
         + Kinh nghiệm: {caculate_year_experience(time_space_gtsystem)}
         + Nhiệm vụ: 
             + Phân tích và thiết kế hệ thống Window
-            + Xây dựng và quản trị hệ thống dự án
+            + Xây dựng và quản trị hệ thống dự án tự động hóa
         """)
     st.image("image/gtsystem.jpg", caption="Công ty GTS - Green Technology and System")
