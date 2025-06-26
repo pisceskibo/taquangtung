@@ -64,9 +64,8 @@ def write_education():
                 <h4>2021 - nay: Trường Đại học Khoa học Tự nhiên - ĐHQGHN</h4>
                 <p>Sinh viên ngành Toán tin tại trường</p>
                 <ul style="margin-top: 0;">
-                    <li>Toán ứng dụng trong Khoa học máy tính và Tin học</li>
-                    <li>Thiết kế thuật toán cho các sản phẩm App/Web</li>
-                    <li>Xây dựng mô hình cho các bài toán tối ưu</li>
+                    <li>Tam khoa đầu ra của ngành (top 3)</li>
+                    <li>Tổng CPA: 3.43/4.00 (loại Giỏi)</li>
                 </ul>
             </div>
             <div style="position: absolute; left: 0; top: 10px; width: 20px; height: 20px; border-radius: 50%; background-color: #00bfff;"></div>
