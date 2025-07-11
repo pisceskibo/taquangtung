@@ -53,7 +53,7 @@ def write_education():
                 <ul style="margin-top: 0;">
                     <li>Lớp chuyên Tự Nhiên: ban T3 (Toán - Lý - Hóa - Sinh)</li>
                     <li>Khối xét tuyển: A01 (Toán - Lý - Anh)</li>
-                    <li>Tổng điểm: 26.4/30</li>
+                    <li>Tổng điểm: 26.35/30.00</li>
                 </ul>
             </div>
             <div style="position: absolute; left: 0; top: 10px; width: 20px; height: 20px; border-radius: 50%; background-color: #00bfff;"></div>
@@ -64,7 +64,7 @@ def write_education():
                 <h4>2021 - nay: Trường Đại học Khoa học Tự nhiên - ĐHQGHN</h4>
                 <p>Sinh viên ngành Toán tin tại trường</p>
                 <ul style="margin-top: 0;">
-                    <li>Tam khoa đầu ra của ngành (top 3)</li>
+                    <li>Tam khoa đầu ra của ngành (top 3 cử nhân xuất sắc ngành Toán tin)</li>
                     <li>Tổng CPA: 3.43/4.00 (loại Giỏi)</li>
                 </ul>
             </div>

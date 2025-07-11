@@ -20,7 +20,8 @@ def write_certification():
         + Đạt học bổng Chương trình trọng điểm quốc gia phát triển Toán học giai đoạn 2021 - 2030  
         + Đạt học bổng khuyến khích học tập kỳ 6 năm 2023 - 2024  
         + Đạt học bổng BIDV năm 2024  
-        + Đạt học bổng khuyến khích học tập kỳ 7 năm 2024 - 2025  
+        + Đạt học bổng khuyến khích học tập kỳ 7 năm 2024 - 2025
+        + Đạt học bổng khuyến khích học tập kỳ 8 năm 2024 - 2025
         """)
 
     with st.expander("**3. 🌟 Sinh viên 5 Tốt**"):
