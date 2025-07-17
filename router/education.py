@@ -63,6 +63,7 @@ def write_education():
             <div style="background-color: #006400; padding: 10px; border-radius: 6px; position: relative;">
                 <h4>2021 - nay: Trường Đại học Khoa học Tự nhiên - ĐHQGHN</h4>
                 <p>Sinh viên ngành Toán tin tại trường</p>
+                <p>Sinh viên đạt kết quả học tập loại Giỏi toàn khóa QH.2021.T.CQ</p>
                 <ul style="margin-top: 0;">
                     <li>Tam khoa đầu ra của ngành (top 3 cử nhân xuất sắc ngành Toán tin)</li>
                     <li>Tổng CPA: 3.43/4.00 (loại Giỏi)</li>

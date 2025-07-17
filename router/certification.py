@@ -40,7 +40,8 @@ def write_certification():
         + Giấy khen "PCN xuất sắc trong công tác Hội và phong trào sinh viên" năm 2022 - 2023  
         + Giấy khen "Sinh viên học tập tốt và tích cực trong công tác lớp" năm 2022 - 2023  
         + Giấy khen "Sinh viên học tập tốt và tích cực trong công tác lớp" năm 2023 - 2024  
-        + Giấy khen "Thành viên tích cực trong CLB MIM Media" năm 2024  
+        + Giấy khen "Thành viên tích cực trong CLB MIM Media" năm 2024
+        + Giấy khen "Sinh viên đạt kết quả học tập loại Giỏi toàn khóa học QH.2021.T.CQ" năm 2025
         """)
 
     with st.expander("**5. 📄 Giấy chứng nhận**"):
