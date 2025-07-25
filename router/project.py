@@ -50,7 +50,15 @@ def write_project():
 
         ---
 
-        ### 5. CREDIT CARD APPROVAL PREDICTION:
+        ### 5. SUDOKU GAME:
+        + Project: Mô hình hóa các phiên bản game Sudoku
+        + Programming Language: Python
+        + Thư viện: PuLP, Gurobipy
+        + Link mô tả: https://github.com/pisceskibo/SudokuGame
+
+        ---
+
+        ### 6. CREDIT CARD APPROVAL PREDICTION:
         + Project: Hệ thống phân tích và dự đoán mô hình phê duyệt thẻ tín dụng ngân hàng
         + Programming Language: Python, Cython
         + Framework: Streamlit
