@@ -75,7 +75,7 @@ def write_experience():
     time_space_gtsystem = "12/2024 - nay"
     st.write(
         f"""
-        ### 6. Công ty GTS - Green Technology and System:
+        ### 6. Công ty GTSystem Vietnam:
         + Chức vụ: Lập trình viên Python (Python Developer)
         + Thời gian: {time_space_gtsystem}
         + Kinh nghiệm: {caculate_year_experience(time_space_gtsystem)}
@@ -83,4 +83,4 @@ def write_experience():
             + Phân tích và thiết kế hệ thống Window
             + Xây dựng và quản trị hệ thống dự án tự động hóa
         """)
-    st.image("image/gtsystem.jpg", caption="Công ty GTS - Green Technology and System")
+    st.image("image/gtsystem.jpg", caption="Công ty GTSystem Việt Nam (GTSVN)")
