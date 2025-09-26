@@ -6,6 +6,9 @@ from router.function import make_circle
 from router import introduction, education, experience, project, activities, certification
 
 
+# Title of Page
+st.set_page_config(page_title="PiscesKibo")
+
 # Avatar tại Sidebar
 image_path_avatar = "image/avatarTQT.png"
 image_avatar = make_circle(image_path_avatar)
