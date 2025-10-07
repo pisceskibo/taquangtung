@@ -9,11 +9,10 @@ def write_education():
 
     st.write(
         """
-        ### 1. Trình độ hiện tại:
-        + Trường: Đại học Khoa học Tự nhiên - ĐHQGHN
-        + Chuyên ngành: Toán Tin (Mathematics and Computer Science)
-        + GPA: 3.43/4.00 (Loại Giỏi)
-        + Điểm rèn luyện: 92/100 (Xuất sắc)
+        ### 1. Trình độ chuyên môn hiện tại:
+        + Trường: Đại học Quốc gia Hà Nội (VNU)
+        + Chuyên ngành: Toán Tin và Khoa học dữ liệu (Computational Mathematics and Data Science)
+        + Trình độ: Thạc sĩ định hướng nghiên cứu
         """
     )
 
@@ -61,13 +60,26 @@ def write_education():
         </li>
         <li style="position: relative; padding-left: 40px; margin-bottom: 20px;">
             <div style="background-color: #006400; padding: 10px; border-radius: 6px; position: relative;">
-                <h4>2021 - nay: Trường Đại học Khoa học Tự nhiên - ĐHQGHN</h4>
+                <h4>2021 - 2025: Trường Đại học Khoa học Tự nhiên - ĐHQGHN</h4>
                 <p>Sinh viên ngành Toán tin tại trường</p>
-                <p>Sinh viên đạt kết quả học tập loại Giỏi toàn khóa QH.2021.T.CQ</p>
+                <p>Tam khoa đầu ra của ngành (top 3 cử nhân xuất sắc ngành Toán tin)</p>
                 <ul style="margin-top: 0;">
-                    <li>Tam khoa đầu ra của ngành (top 3 cử nhân xuất sắc ngành Toán tin)</li>
+                    <li>Chuyên ngành: Toán tin (Mathematics and Computer Science)</li>
+                    <li>Trình độ: Cử nhân đại học</li>
                     <li>Tổng CPA: 3.43/4.00 (loại Giỏi)</li>
                     <li>Điểm rèn luyện: 92/100 (Xuất sắc)</li>
+                </ul>
+            </div>
+            <div style="position: absolute; left: 0; top: 10px; width: 20px; height: 20px; border-radius: 50%; background-color: #00bfff;"></div>
+            <div style="position: absolute; left: 9px; top: 18px; width: 2px; height: 100%; background-color: #00bfff;"></div>
+        </li>
+        <li style="position: relative; padding-left: 40px; margin-bottom: 20px;">
+            <div style="background-color: #8A2BE2; padding: 10px; border-radius: 6px; position: relative;">
+                <h4>2025 - nay: Đại học Quốc gia Hà Nội (VNU)</h4>
+                <p>Học viên cao học ngành Khoa học dữ liệu tại trường</p>
+                <ul style="margin-top: 0;">
+                    <li>Chuyên ngành: Khoa học dữ liệu (Master in Data Science)</li>
+                    <li>Trình độ: Thạc sĩ</li>
                 </ul>
             </div>
             <div style="position: absolute; left: 0; top: 10px; width: 20px; height: 20px; border-radius: 50%; background-color: #00bfff;"></div>
