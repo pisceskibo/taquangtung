@@ -62,6 +62,14 @@ def write_project():
         + Project: Hệ thống phân tích và dự đoán mô hình phê duyệt thẻ tín dụng ngân hàng
         + Programming Language: Python, Cython
         + Framework: Streamlit
-        + Link mô tả: https://github.com/pisceskibo/CreditCardApprovalPrediction 
+        + Link mô tả: https://github.com/pisceskibo/CreditCardApprovalPrediction
+
+         ---
+
+        ### 7. OCR DOCUMENT SYSTEM:
+        + Project: Hệ thống trích xuất dữ liệu Document OCR
+        + Programming Language: Python, HTML, CSS
+        + Framework: Pyramid
+        + Link mô tả: https://github.com/pisceskibo/SystemDocumentOCR
         """
     )
