@@ -72,7 +72,7 @@ def write_experience():
         """)
     st.image("image/rikkei.jpg", caption="Công ty Rikkeisoft")
 
-    time_space_gtsystem = "12/2024 - nay"
+    time_space_gtsystem = "12/2024 - 7/2026"
     st.write(
         f"""
         ### 6. Công ty GTSystem Vietnam:
