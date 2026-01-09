@@ -84,3 +84,16 @@ def write_experience():
             + Xây dựng và quản trị hệ thống dự án tự động hóa
         """)
     st.image("image/gtsystem.jpg", caption="Công ty GTSystem Việt Nam (GTSVN)")
+
+    time_space_otani = "01/2026 - nay"
+    st.write(
+        f"""
+        ### 6. Công ty Otani UP:
+        + Chức vụ: Lập trình viên Python (Python Developer)
+        + Thời gian: {time_space_otani}
+        + Kinh nghiệm: {caculate_year_experience(time_space_otani)}
+        + Nhiệm vụ: 
+            + Xây dựng và thiết kế hệ thống Website
+            + Quản lý và tối ưu hóa hệ thống dự án kinh doanh sản xuất
+        """)
+    st.image("image/otaniup.jpg", caption="Công ty Otani Unique Project (Ontani U.P.)")
