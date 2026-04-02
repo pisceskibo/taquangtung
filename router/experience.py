@@ -85,7 +85,7 @@ def write_experience():
         """)
     st.image("image/gtsystem.jpg", caption="Công ty GTSystem Việt Nam (GTSVN)")
 
-    time_space_otani = "01/2026 - nay"
+    time_space_otani = "01/2026 - 04/2026"
     st.write(
         f"""
         ### 6. Công ty Otani UP:
@@ -97,3 +97,16 @@ def write_experience():
             + Quản lý và tối ưu hóa hệ thống dự án kinh doanh sản xuất
         """)
     st.image("image/otaniup.jpg", caption="Công ty Otani Unique Project (Ontani U.P.)")
+
+    time_space_lyrax = "04/2026 - nay"
+    st.write(
+        f"""
+        ### 7. Công ty cổ phần Công nghệ LYRAX:
+        + Chức vụ: Lập trình viên Python (Python Developer)
+        + Thời gian: {time_space_lyrax}
+        + Kinh nghiệm: {caculate_year_experience(time_space_lyrax)}
+        + Nhiệm vụ: 
+            + Xây dựng và phát triển ứng dụng Website AI/LLM
+            + Tối ưu hóa và xử lý dữ liệu tự động của hệ thống
+        """)
+    st.image("image/lyraxgroup.jpg", caption="Công ty cổ phần Công nghệ LYRAX (LYRAX GROUP)")
