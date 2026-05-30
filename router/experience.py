@@ -98,7 +98,7 @@ def write_experience():
         """)
     st.image("image/otaniup.jpg", caption="Công ty Otani Unique Project (Ontani U.P.)")
 
-    time_space_lyrax = "04/2026 - nay"
+    time_space_lyrax = "04/2026 - 08/2026"
     st.write(
         f"""
         ### 7. Công ty cổ phần Công nghệ LYRAX:
@@ -110,3 +110,16 @@ def write_experience():
             + Tối ưu hóa và xử lý dữ liệu tự động của hệ thống
         """)
     st.image("image/lyraxgroup.jpg", caption="Công ty cổ phần Công nghệ LYRAX (LYRAX GROUP)")
+
+    time_space_rikkeieducation = "05/2026 - nay"
+    st.write(
+        f"""
+        ### 8. Rikkei Education:
+        + Chức vụ: Giảng viên lập trình Python
+        + Thời gian: {time_space_rikkeieducation}
+        + Kinh nghiệm: {caculate_year_experience(time_space_rikkeieducation)}
+        + Nhiệm vụ: 
+            + Giảng dạy và hướng dẫn học viên về lập trình Python
+            + Xây dựng và phát triển chương trình đào tạo Python chuyên sâu
+        """)
+    st.image("image/rikkeieducation.jpg", caption="Rikkei Education")
