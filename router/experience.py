@@ -2,7 +2,6 @@
 import streamlit as st 
 from router.function import caculate_year_experience
 
-
 # Nội dung experience
 def write_experience():
     st.write(
