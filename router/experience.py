@@ -113,7 +113,7 @@ def write_experience():
     time_space_rikkeieducation = "05/2026 - nay"
     st.write(
         f"""
-        ### 8. Rikkei Education:
+        ### 8. Công ty cổ phần Rikkei Education:
         + Chức vụ: Giảng viên lập trình Python
         + Thời gian: {time_space_rikkeieducation}
         + Kinh nghiệm: {caculate_year_experience(time_space_rikkeieducation)}
