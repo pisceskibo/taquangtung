@@ -121,4 +121,4 @@ def write_experience():
             + Giảng dạy và hướng dẫn học viên về lập trình Python
             + Xây dựng và phát triển chương trình đào tạo Python chuyên sâu
         """)
-    st.image("image/rikkeieducation.jpg", caption="Rikkei Education")
+    st.image("image/rikkeieducation.jpg", caption="Công ty Rikkei Education")
