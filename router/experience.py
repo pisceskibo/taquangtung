@@ -58,23 +58,10 @@ def write_experience():
         """)
     st.image("image/smartlog.jpg", caption="Công ty Smartlog")
 
-    time_space_rikkeisoft = "05/2024 - 09/2024"
-    st.write(
-        f"""
-        ### 5. Công ty Rikkeisoft:
-        + Chức vụ: Lập trình viên Python (Python Developer)
-        + Thời gian: {time_space_rikkeisoft}
-        + Kinh nghiệm: {caculate_year_experience(time_space_rikkeisoft)}
-        + Nhiệm vụ: 
-            + Phân tích và thiết kế hệ thống Website
-            + Xây dựng và bảo trì dự án
-        """)
-    st.image("image/rikkei.jpg", caption="Công ty Rikkeisoft")
-
     time_space_gtsystem = "12/2024 - 07/2026"
     st.write(
         f"""
-        ### 6. Công ty GTSystem Vietnam:
+        ### 5. Công ty GTSystem Vietnam:
         + Chức vụ: Lập trình viên Python (Python Developer)
         + Thời gian: {time_space_gtsystem}
         + Kinh nghiệm: {caculate_year_experience(time_space_gtsystem)}
@@ -110,15 +97,36 @@ def write_experience():
         """)
     st.image("image/lyraxgroup.jpg", caption="Công ty cổ phần Công nghệ LYRAX (LYRAX GROUP)")
 
-    time_space_rikkeieducation = "05/2026 - nay"
+    time_space_rikkeisoft = "05/2024 - 09/2024"
+    time_space_rikkeisoft_2 = "07/2026 - nay"
     st.write(
         f"""
-        ### 8. Công ty cổ phần Rikkei Education:
-        + Chức vụ: Giảng viên lập trình Python
-        + Thời gian: {time_space_rikkeieducation}
-        + Kinh nghiệm: {caculate_year_experience(time_space_rikkeieducation)}
+        ### 8. Công ty Rikkeisoft:
+        #### Giai đoạn 1: ({time_space_rikkeisoft})
+        + Chức vụ: Lập trình viên Python (Python Developer)
+        + Kinh nghiệm: {caculate_year_experience(time_space_rikkeisoft)}
         + Nhiệm vụ: 
-            + Giảng dạy và hướng dẫn học viên về lập trình Python
-            + Xây dựng và phát triển chương trình đào tạo Python chuyên sâu
+            + Phân tích và thiết kế hệ thống Website
+            + Xây dựng và bảo trì dự án
+
+        #### Giai đoạn 2: ({time_space_rikkeisoft_2})
+        + Chức vụ: Lập trình viên Python (Python Developer)
+        + Kinh nghiệm: {caculate_year_experience(time_space_rikkeisoft_2)}
+        + Nhiệm vụ: 
+            + Phát triển và tối ưu hệ thống xử lý dữ liệu lớn
+            + Phân tích và thiết kế hệ thống cùng với SamSung
         """)
-    st.image("image/rikkeieducation.jpg", caption="Công ty Rikkei Education")
+    st.image("image/rikkei.jpg", caption="Công ty cổ phần Rikkeisoft")
+
+    # time_space_rikkeieducation = "05/2026 - 07/2026"
+    # st.write(
+    #     f"""
+    #     ### 8. Công ty cổ phần Rikkei Education:
+    #     + Chức vụ: Giảng viên lập trình Python
+    #     + Thời gian: {time_space_rikkeieducation}
+    #     + Kinh nghiệm: {caculate_year_experience(time_space_rikkeieducation)}
+    #     + Nhiệm vụ: 
+    #         + Giảng dạy và hướng dẫn học viên về lập trình Python
+    #         + Xây dựng và phát triển chương trình đào tạo Python chuyên sâu
+    #     """)
+    # st.image("image/rikkeieducation.jpg", caption="Công ty Rikkei Education")
