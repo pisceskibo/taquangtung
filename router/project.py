@@ -64,12 +64,20 @@ def write_project():
         + Framework: Streamlit
         + Link mô tả: https://github.com/pisceskibo/CreditCardApprovalPrediction
 
-         ---
+        ---
 
         ### 7. OCR DOCUMENT SYSTEM:
         + Project: Hệ thống trích xuất dữ liệu Document OCR
         + Programming Language: Python, HTML, CSS
         + Framework: Pyramid
         + Link mô tả: https://github.com/pisceskibo/SystemDocumentOCR
+
+        ---
+        
+        ### 8. SENTIMENT ANALYSIS SYSTEM:
+        + Project: Hệ thống phân tích cảm xúc bình luận
+        + Programming Language: Python, VueJS, CSS, JavaScript
+        + Framework: Flask
+        + Link mô tả: https://github.com/pisceskibo/SentimentAnalysisSystem
         """
     )
