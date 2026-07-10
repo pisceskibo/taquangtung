@@ -11,7 +11,7 @@ def write_education():
         """
         ### 1. Trình độ chuyên môn hiện tại:
         + Trường: Đại học Quốc gia Hà Nội (VNU)
-        + Chuyên ngành: Toán Tin và Khoa học dữ liệu (Computational Mathematics and Data Science)
+        + Chuyên ngành: Toán Tin và Khoa học dữ liệu (Mathematics of Computer Science and Data Science)
         + Trình độ: Thạc sĩ định hướng nghiên cứu
         """
     )
