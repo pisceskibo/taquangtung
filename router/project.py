@@ -153,5 +153,32 @@ def get_company_project():
         + Programming Language: Python, C/C++
         + Framework: PyQT
         + Description & Result: Xây dựng và phát triển ứng dụng Software/Firmware hỗ trợ cho việc kiểm thử tự động hóa quá trình tổng hợp các lỗi sửa sai trên thiết bị xe ô tô.
+
+        ---
+
+        ### 3. MULTILINGUAL ZOOM MEETING MINUTES EXTRACTION:
+        + Project: Hệ thống trích xuất và trao đổi cuộc họp Meeting đa ngôn ngữ
+        + Role: Python Developer
+        + Programming Language: Python, VueJS, SCSS, JavaScript
+        + Framework: FastAPI
+        + Description & Result: Phát triển các tính năng cuộc họp cốt lõi bao gồm việc truyền phát dữ liệu âm thanh/video chất lượng cao theo thời gian thực.
+
+        ---
+
+        ### 4. SOCIAL BLOG MANAGEMENT SYSTEM:
+        + Project: Hệ thống quản lý bài đăng mạng xã hội
+        + Role: Python Developer
+        + Programming Language: Python, VueJS, SCSS, JavaScript
+        + Framework: FastAPI
+        + Description & Result: Thiết kế hệ thống quản lý và kiếm soát các bài đăng trên mạng xã hội có kiểm duyệt theo tiêu chuẩn cộng đồng.
+
+        ---
+
+        ### 5. LEAVE HUB ATTENDANCE SYSTEM:
+        + Project: Hệ thống quản lý chấm công và nghỉ phép của nhân viên 
+        + Role: Python Developer
+        + Programming Language: Python, CSS, TypeScript
+        + Framework: FastAPI
+        + Description & Result: Thiết kế hệ thống Website quản lý chấm công, thời gian làm việc và các đơn xin nghỉ phép của nhân viên trong công ty.
         """
     )
