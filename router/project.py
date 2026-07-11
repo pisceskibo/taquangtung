@@ -174,11 +174,11 @@ def get_company_project():
 
         ---
 
-        ### 5. LEAVE HUB ATTENDANCE SYSTEM:
+        ### 5. LEAVE HUB ATTENDANCE SYSTEM WITH HRMS:
         + Project: Hệ thống quản lý chấm công và nghỉ phép của nhân viên 
         + Role: Python Developer
-        + Programming Language: Python, CSS, TypeScript
-        + Framework: FastAPI
+        + Programming Language: Python, CSS, TypeScript, JavaScript
+        + Framework: FastAPI, Frappe
         + Description & Result: Thiết kế hệ thống Website quản lý chấm công, thời gian làm việc và các đơn xin nghỉ phép của nhân viên trong công ty.
         """
     )
