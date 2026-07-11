@@ -180,5 +180,14 @@ def get_company_project():
         + Programming Language: Python, CSS, TypeScript, JavaScript
         + Framework: FastAPI, Frappe
         + Description & Result: Thiết kế hệ thống Website quản lý chấm công, thời gian làm việc và các đơn xin nghỉ phép của nhân viên trong công ty.
+
+        ---
+
+        ### 6. NEXT SUPPLY CHAIN MANAGEMENT OF NSCM:
+        + Project: Hệ thống quản lý chuỗi cung ứng thê hệ mới 
+        + Role: Python Developer
+        + Programming Language: Python, SQL
+        + Framework: Pandas, Polars
+        + Description & Result: Thiết kế và chuyển đổi thông tin dữ liệu chuỗi cung ứng theo các phiên bản của hệ thống.
         """
     )
