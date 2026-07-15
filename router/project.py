@@ -184,7 +184,7 @@ def get_company_project():
         ---
 
         ### 6. NEXT SUPPLY CHAIN MANAGEMENT OF NSCM:
-        + Project: Hệ thống quản lý chuỗi cung ứng thê hệ mới 
+        + Project: Hệ thống quản lý chuỗi cung ứng thế hệ mới 
         + Role: Python Developer
         + Programming Language: Python, SQL
         + Framework: Pandas, Polars
