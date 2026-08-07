@@ -1,0 +1,33 @@
+{
+    "general_information": {
+        "summary": "Tôi là cử nhân chuyên ngành Toán Tin, có nền tảng vững chắc về Công nghệ Thông tin và đặc biệt quan tâm đến lĩnh vực xây dựng phát triển phần mềm. Hiện tại, tôi cũng đang là học viên cao học trình độ Thạc sĩ Khoa học dữ liệu tại Đại học Quốc gia Hà Nội (VNU). Là người ham học hỏi, yêu thích sáng tạo và luôn chủ động tìm kiếm giải pháp hiệu quả cho các vấn đề thực tiễn. Tôi có định hướng trở thành Lập trình viên Python FullStack với khả năng phát triển ứng dụng đa lĩnh vực chuyên môn.",
+        "full_name": "Tạ Quang Tùng (Kibo)",
+        "date_of_birth": "06/03/2003",
+        "hometown_address": "Hà Nội, Việt Nam",
+        "phone_number": "039 846 3203",
+        "email": "taquangtung2003@gmail.com",
+        "cv_path": "image/CV_TaQuangTung_Python.pdf"
+    },
+    "overview_categories": [
+        {
+        "category": "Học vấn (Education)",
+        "description": "Thông tin về quá trình học tập"
+        },
+        {
+        "category": "Kinh nghiệm (Experience)",
+        "description": "Thông tin về các kinh nghiệm làm việc"
+        },
+        {
+        "category": "Dự án (Projects)",
+        "description": "Danh sách các dự án đã thực hiện"
+        },
+        {
+        "category": "Hoạt động (Activities)",
+        "description": "Thông tin về các hoạt động ngoại khóa"
+        },
+        {
+        "category": "Chứng chỉ (Certifications)",
+        "description": "Chứng chỉ và Giấy chứng nhận"
+        }
+    ]
+}

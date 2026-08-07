@@ -1,68 +1,71 @@
 # Thư viện cần thiết
 import streamlit as st 
 import base64
+import json
 
-# Nội dung introduction
+
+INTRODUCTION_DATASET = "datasets/introduction_data.json"
+
+@st.cache_data
+def load_data_json():
+    with open(INTRODUCTION_DATASET, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+# Nội dung Introduction
 def write_introduction():
-    st.write(
-        """<hr style="border: 1px solid #ccc;">""", unsafe_allow_html=True
+    # Load datasets
+    information_data = load_data_json()
+    info = information_data["general_information"]
+    categories = information_data["overview_categories"]
+
+    st.write("""<hr style="border: 1px solid #ccc;">""", unsafe_allow_html=True)
+
+    # 1. Tổng quan:
+    st.markdown("### 1. Tổng quan:")
+    st.markdown(
+        f'<div style="text-align: justify;">{info["summary"]}</div><br>',
+        unsafe_allow_html=True,
     )
 
-    st.write(
-    """
-    ### 1. Tổng quan:
-    <div style="text-align: justify;">
-        Tôi là cử nhân chuyên ngành Toán Tin, có nền tảng vững chắc về Công nghệ Thông tin và đặc biệt 
-        quan tâm đến lĩnh vực xây dựng phát triển phần mềm. Hiện tại, tôi cũng đang là học viên cao học
-        trình độ Thạc sĩ Khoa học dữ liệu tại Đại học Quốc gia Hà Nội (VNU). Là người ham học hỏi, yêu thích 
-        sáng tạo và luôn chủ động tìm kiếm giải pháp hiệu quả cho các vấn đề thực tiễn. Tôi có định hướng 
-        trở thành Lập trình viên Python FullStack với khả năng phát triển ứng dụng đa lĩnh vực chuyên môn.
-    </div>
-    <br>
+    # 2. Thông tin chi tiết:
+    st.markdown("### 2. Thông tin chi tiết:")
+    st.markdown(
+        f"""
+        + **Họ và tên:** {info["full_name"]}
+        + **Năm sinh:** {info["date_of_birth"]}
+        + **Quê quán:** {info["hometown_address"]}
+        + **SĐT:** {info["phone_number"]}
+        + **Email:** {info["email"]}
+        """
+    )
 
-    ### 2. Thông tin chi tiết:
-    + Họ và tên: Tạ Quang Tùng (Kibo)
-    + Năm sinh: 06/03/2003
-    + Quê quán: Hà Nội, Việt Nam
-    + SĐT: 039 846 3203
-    + Email: taquangtung2003@gmail.com
+    # 3. Giới thiệu chung:
+    st.markdown("### 3. Giới thiệu chung (Overview):")
+    table_rows = "".join(
+        [
+            f'<tr><td style="border: 1px solid black; padding: 8px; text-align: center;">{item["category"]}</td>'
+            f'<td style="border: 1px solid black; padding: 8px; text-align: center;">{item["description"]}</td></tr>'
+            for item in categories
+        ]
+    )
 
-    ### 3. Giới thiệu chung (Overview):
+    table_html = f"""
     <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
-            <tr style="background-color: #6699FF;">
-                <th style="border: 1px solid black; padding: 8px; text-align: center;">Danh mục</th>
-                <th style="border: 1px solid black; padding: 8px; text-align: center;">Mô tả</th>
-            </tr>
-            <tr>
-                <td style="border: 1px solid black; padding: 8px; text-align: center;">Học vấn (Education)</td>
-                <td style="border: 1px solid black; padding: 8px; text-align: center;">Thông tin về quá trình học tập</td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid black; padding: 8px; text-align: center;">Kinh nghiệm (Experience)</td>
-                <td style="border: 1px solid black; padding: 8px; text-align: center;">Thông tin về các kinh nghiệm làm việc</td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid black; padding: 8px; text-align: center;">Dự án (Projects)</td>
-                <td style="border: 1px solid black; padding: 8px; text-align: center;">Danh sách các dự án đã thực hiện</td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid black; padding: 8px; text-align: center;">Hoạt động (Activities)</td>
-                <td style="border: 1px solid black; padding: 8px; text-align: center;">Thông tin về các hoạt động ngoại khóa</td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid black; padding: 8px; text-align: center;">Chứng chỉ (Certifications)</td>
-                <td style="border: 1px solid black; padding: 8px; text-align: center;">Chứng chỉ và Giấy chứng nhận</td>
-            </tr>
-        </table>
-    """, unsafe_allow_html=True
-    )
+        <tr style="background-color: #6699FF; color: white;">
+            <th style="border: 1px solid black; padding: 8px; text-align: center;">Danh mục</th>
+            <th style="border: 1px solid black; padding: 8px; text-align: center;">Mô tả</th>
+        </tr>
+        {table_rows}
+    </table>
+    """
+    st.write(table_html, unsafe_allow_html=True)
 
-    load_cv_path()
+    # Load CV JSON
+    load_cv_path(info["cv_path"])
 
 # Load CV
-def load_cv_path():
-    pdf_cv_file_path = "image/CV_TaQuangTung_Python.pdf"
-
+def load_cv_path(pdf_cv_file_path):
     with open(pdf_cv_file_path, "rb") as f:
         pdf_bytes = f.read()
 
