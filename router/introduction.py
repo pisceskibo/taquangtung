@@ -1,5 +1,6 @@
 # Thư viện cần thiết
 import streamlit as st 
+import base64
 
 # Nội dung introduction
 def write_introduction():
@@ -55,3 +56,17 @@ def write_introduction():
         </table>
     """, unsafe_allow_html=True
     )
+
+    load_cv_path()
+
+# Load CV
+def load_cv_path():
+    pdf_cv_file_path = "image/CV_TaQuangTung_Python.pdf"
+
+    with open(pdf_cv_file_path, "rb") as f:
+        pdf_bytes = f.read()
+
+    with st.expander("👉 Xem CV trực tiếp"):
+        base64_pdf = base64.b64encode(pdf_bytes).decode("utf-8")
+        pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="100%" height="500" type="application/pdf"></iframe>'
+        st.markdown(pdf_display, unsafe_allow_html=True)
