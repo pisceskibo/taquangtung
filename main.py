@@ -10,7 +10,7 @@ from router import introduction, education, experience, project, activities, cer
 st.set_page_config(page_title="PiscesKibo")
 
 # Avatar tại Sidebar
-image_path_avatar = "image/avatarTQT.png"
+image_path_avatar = "images/avatarTQT.png"
 image_avatar = make_circle(image_path_avatar)
 st.sidebar.image(image_avatar, caption = "Tạ Quang Tùng")
 

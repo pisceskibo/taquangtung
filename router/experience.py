@@ -17,7 +17,7 @@ def write_experience():
         + Kinh nghiệm: {caculate_year_experience(time_space_mimmedia)}
         + Nhiệm vụ: Quản lý và tổ chức các hoạt động về mảng truyền thông của Khoa 
         """)
-    st.image("image/mimmedia.jpg", caption="CLB MIM Media")
+    st.image("images/mimmedia.jpg", caption="CLB MIM Media")
 
     time_space_hamic = "12/2022 - 08/2024"
     st.write(
@@ -32,7 +32,7 @@ def write_experience():
             + Tổ chức hoạt động giảng dạy những kỹ năng chuyên môn về Lập trình
             + Tổ chức cuộc thi Lập trình Web và Phân tích dữ liệu lớn
         """)
-    st.image("image/hamic.jpg", caption="CLB Toán Tin - HAMIC")
+    st.image("images/hamic.jpg", caption="CLB Toán Tin - HAMIC")
 
     time_space_mim = "08/2023 - 01/2025"
     st.write(
@@ -43,7 +43,7 @@ def write_experience():
         + Kinh nghiệm: {caculate_year_experience(time_space_mim)}
         + Nhiệm vụ: Thiết kế ấn phẩm và Đầu mối sự kiện
         """)
-    st.image("image/mim.jpg", caption="Khoa Toán - Cơ - Tin học")
+    st.image("images/mim.jpg", caption="Khoa Toán - Cơ - Tin học")
 
     time_space_smartlog = "12/2022 - 02/2023"
     st.write(
@@ -56,7 +56,7 @@ def write_experience():
             + Quản lý và phát triển thuật toán tối ưu hóa chiến lược định kỳ
             + Phân tích và xây dựng Website trực quan hóa dữ liệu
         """)
-    st.image("image/smartlog.jpg", caption="Công ty Smartlog")
+    st.image("images/smartlog.jpg", caption="Công ty Smartlog")
 
     time_space_gtsystem = "12/2024 - 07/2026"
     st.write(
@@ -69,7 +69,7 @@ def write_experience():
             + Phân tích và thiết kế hệ thống Window
             + Xây dựng và quản trị hệ thống dự án tự động hóa
         """)
-    st.image("image/gtsystem.jpg", caption="Công ty GTSystem Việt Nam (GTSVN)")
+    st.image("images/gtsystem.jpg", caption="Công ty GTSystem Việt Nam (GTSVN)")
 
     time_space_otani = "01/2026 - 04/2026"
     st.write(
@@ -82,7 +82,7 @@ def write_experience():
             + Xây dựng và thiết kế hệ thống Website
             + Quản lý và tối ưu hóa hệ thống dự án kinh doanh sản xuất
         """)
-    st.image("image/otaniup.jpg", caption="Công ty Otani Unique Project (Ontani U.P.)")
+    st.image("images/otaniup.jpg", caption="Công ty Otani Unique Project (Ontani U.P.)")
 
     time_space_lyrax = "04/2026 - 08/2026"
     st.write(
@@ -95,7 +95,7 @@ def write_experience():
             + Xây dựng và phát triển ứng dụng Website AI/LLM
             + Tối ưu hóa và xử lý dữ liệu tự động của hệ thống
         """)
-    st.image("image/lyraxgroup.jpg", caption="Công ty cổ phần Công nghệ LYRAX (LYRAX GROUP)")
+    st.image("images/lyraxgroup.jpg", caption="Công ty cổ phần Công nghệ LYRAX (LYRAX GROUP)")
 
     time_space_rikkeisoft = "05/2024 - 09/2024"
     time_space_rikkeisoft_2 = "07/2026 - nay"
@@ -116,7 +116,7 @@ def write_experience():
             + Phát triển và tối ưu hệ thống xử lý dữ liệu lớn
             + Phân tích và thiết kế hệ thống cùng với SamSung
         """)
-    st.image("image/rikkei.jpg", caption="Công ty cổ phần Rikkeisoft")
+    st.image("images/rikkei.jpg", caption="Công ty cổ phần Rikkeisoft")
 
     # time_space_rikkeieducation = "05/2026 - 07/2026"
     # st.write(
@@ -129,4 +129,4 @@ def write_experience():
     #         + Giảng dạy và hướng dẫn học viên về lập trình Python
     #         + Xây dựng và phát triển chương trình đào tạo Python chuyên sâu
     #     """)
-    # st.image("image/rikkeieducation.jpg", caption="Công ty Rikkei Education")
+    # st.image("images/rikkeieducation.jpg", caption="Công ty Rikkei Education")

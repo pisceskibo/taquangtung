@@ -53,9 +53,9 @@ def write_education():
         ## Merge HTML with Code Block
         timeline_items_html += f"""
 <li style="position: relative; padding-left: 40px; margin-bottom: 20px;">
-<div style="background-color: {item_school.get('color')}; padding: 10px; border-radius: 6px; position: relative; color: white;">
-<h4>{item_school.get('time')}: {item_school['school']}</h4>
-<p>{item_school.get('description')}</p>
+<div style="background-color: {item_school.get("color")}; padding: 10px; border-radius: 6px; position: relative; color: white;">
+<h4>{item_school.get('time')}: {item_school.get("school")}</h4>
+<p>{item_school.get("description")}</p>
 {achievement_html}
 {details_html}
 </div>
