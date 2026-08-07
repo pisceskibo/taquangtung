@@ -1,0 +1,65 @@
+{
+  "current_degree": {
+    "university": "Đại học Quốc gia Hà Nội (VNU)",
+    "majority": "Toán Tin và Khoa học dữ liệu (Mathematics of Computer Science and Data Science)",
+    "level": "Thạc sĩ định hướng nghiên cứu"
+  },
+  "education_timeline": [
+    {
+      "time": "2009 - 2010",
+      "school": "Trường Tiểu học Minh Khai - Hà Nội",
+      "description": "Học sinh tiểu học tại trường",
+      "color": "#66CC66",
+      "details": []
+    },
+    {
+      "time": "2010 - 2014",
+      "school": "Trường Tiểu học Tô Hoàng - Hà Nội",
+      "description": "Học sinh lớp chuyên tiểu học tại trường",
+      "color": "#ADD8E6",
+      "details": []
+    },
+    {
+      "time": "2014 - 2018",
+      "school": "Trường THCS Ngô Gia Tự - Hà Nội",
+      "description": "Học sinh trung học cơ sở tại trường",
+      "color": "#FFD700",
+      "details": []
+    },
+    {
+      "time": "2018 - 2021",
+      "school": "Trường THPT Thăng Long - Hà Nội",
+      "description": "Học sinh trung học phổ thông tại trường",
+      "achievement": "Thí sinh đạt giải khuyến khích đội tuyển Olympic Toán học cấp trường năm 2020",
+      "color": "#FFA07A",
+      "details": [
+        "Lớp chuyên Tự Nhiên: ban T3 (Toán - Lý - Hóa - Sinh)",
+        "Khối xét tuyển: A01 (Toán - Lý - Anh)",
+        "Tổng điểm: 26.35/30.00"
+      ]
+    },
+    {
+      "time": "2021 - 2025",
+      "school": "Trường Đại học Khoa học Tự nhiên - ĐHQGHN",
+      "description": "Sinh viên ngành Toán tin tại trường",
+      "achievement": "Tam khoa đầu ra của ngành (top 3 cử nhân xuất sắc ngành Toán tin)",
+      "color": "#006400",
+      "details": [
+        "Chuyên ngành: Toán tin (Mathematics and Computer Science)",
+        "Trình độ: Cử nhân đại học",
+        "Tổng CPA: 3.43/4.00 (loại Giỏi)",
+        "Điểm rèn luyện: 92/100 (Xuất sắc)"
+      ]
+    },
+    {
+      "time": "2025 - nay",
+      "school": "Đại học Quốc gia Hà Nội (VNU)",
+      "description": "Học viên cao học ngành Khoa học dữ liệu tại trường",
+      "color": "#8A2BE2",
+      "details": [
+        "Chuyên ngành: Khoa học dữ liệu (Master in Data Science)",
+        "Trình độ: Thạc sĩ"
+      ]
+    }
+  ]
+}

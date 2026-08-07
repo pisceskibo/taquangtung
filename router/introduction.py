@@ -7,7 +7,7 @@ import json
 INTRODUCTION_DATASET = "datasets/introduction_data.json"
 
 @st.cache_data
-def load_data_json():
+def load_introduction_data_json():
     with open(INTRODUCTION_DATASET, "r", encoding="utf-8") as f:
         return json.load(f)
 
@@ -15,9 +15,9 @@ def load_data_json():
 # Nội dung Introduction
 def write_introduction():
     # Load datasets
-    information_data = load_data_json()
-    info = information_data["general_information"]
-    categories = information_data["overview_categories"]
+    information_data = load_introduction_data_json()
+    info = information_data.get("general_information")
+    categories = information_data.get("overview_categories")
 
     st.write("""<hr style="border: 1px solid #ccc;">""", unsafe_allow_html=True)
 
@@ -32,11 +32,11 @@ def write_introduction():
     st.markdown("### 2. Thông tin chi tiết:")
     st.markdown(
         f"""
-        + **Họ và tên:** {info["full_name"]}
-        + **Năm sinh:** {info["date_of_birth"]}
-        + **Quê quán:** {info["hometown_address"]}
-        + **SĐT:** {info["phone_number"]}
-        + **Email:** {info["email"]}
+        + **Họ và tên:** {info.get("full_name")}
+        + **Năm sinh:** {info.get("date_of_birth")}
+        + **Quê quán:** {info.get("hometown_address")}
+        + **SĐT:** {info.get("phone_number")}
+        + **Email:** {info.get("email")}
         """
     )
 
@@ -62,7 +62,7 @@ def write_introduction():
     st.write(table_html, unsafe_allow_html=True)
 
     # Load CV JSON
-    load_cv_path(info["cv_path"])
+    load_cv_path(info.get("cv_path"))
 
 # Load CV
 def load_cv_path(pdf_cv_file_path):
