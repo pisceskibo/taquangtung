@@ -24,7 +24,7 @@ def write_introduction():
     # 1. Tổng quan:
     st.markdown("### 1. Tổng quan:")
     st.markdown(
-        f'<div style="text-align: justify;">{info["summary"]}</div><br>',
+        f'<div style="text-align: justify;">{info.get("summary")}</div><br>',
         unsafe_allow_html=True,
     )
 
@@ -44,8 +44,8 @@ def write_introduction():
     st.markdown("### 3. Giới thiệu chung (Overview):")
     table_rows = "".join(
         [
-            f'<tr><td style="border: 1px solid black; padding: 8px; text-align: center;">{item["category"]}</td>'
-            f'<td style="border: 1px solid black; padding: 8px; text-align: center;">{item["description"]}</td></tr>'
+            f'<tr><td style="border: 1px solid black; padding: 8px; text-align: center;">{item.get("category")}</td>'
+            f'<td style="border: 1px solid black; padding: 8px; text-align: center;">{item.get("description")}</td></tr>'
             for item in categories
         ]
     )
