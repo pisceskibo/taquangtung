@@ -1,6 +1,5 @@
 # Thư viện cần thiết
 import streamlit as st
-import textwrap
 import json
 
 
@@ -71,4 +70,4 @@ def write_education():
 </ul>
 """
 
-    st.markdown(textwrap.dedent(full_timeline_html), unsafe_allow_html=True)
+    st.markdown(full_timeline_html, unsafe_allow_html=True)
