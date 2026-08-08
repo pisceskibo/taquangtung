@@ -1,47 +1,30 @@
 # Thư viện cần thiết
-import streamlit as st 
+import streamlit as st
+import json
+
+
+ACTIVITY_DATASET = "datasets/activity_data.json"
+
+@st.cache_data
+def load_activity_data_json():
+    with open(ACTIVITY_DATASET, "r", encoding="utf-8") as f:
+        return json.load(f)
+
 
 # Nội dung activities
 def write_activitiy():
+    # Load datasets
+    activity_data = load_activity_data_json()
+
     st.write("""<hr style="border: 1px solid #ccc;">""", unsafe_allow_html=True)
 
-    tab_2022, tab_2023, tab_2024, tab_2025 = st.tabs(["📅 NĂM 2022", "📅 NĂM 2023", "📅 NĂM 2024", "📅 NĂM 2025"])
+    # Lấy danh sách tiêu đề Tabbar
+    year_titles = [year_info.get("year_label") for year_info in activity_data.values()]
+    year_tabs = st.tabs(year_titles)
 
-    with tab_2022:
-        st.markdown("""
-        + Ban tổ chức cuộc thi **MC Âm Sắc 2022** do CLB PEM x CLB MIM Media  
-        + Ban tổ chức cuộc thi khoa học **Simple Science 2022** do Khoa Toán - Cơ - Tin học  
-        + Ban tổ chức cuộc thi **Lập trình WContest 2022** do CLB HAMIC & CLB MIM Media  
-        + Ban tổ chức sự kiện **Giải bóng đá MIM Cup 2022** do Khoa Toán - Cơ - Tin học  
-        + Ban tổ chức sự kiện **Ngày hội hướng nghiệp 2022** do Khoa Toán - Cơ - Tin học  
-        + Ban tổ chức sự kiện **Team Building 2022** do Khoa Toán - Cơ - Tin học  
-        + Ban tổ chức sự kiện **VNU Science Fair 2022** do Trường Đại học Khoa học Tự nhiên  
-        + Tình nguyện viên cuộc thi **Lớp tôi là số 1** năm 2022  
-        + Tình nguyện viên hỗ trợ tân sinh viên **K67** Khoa Toán - Cơ - Tin học năm 2022  
-        + Tình nguyện viên hỗ trợ **Mùa hè xanh 2022** do Khoa Toán - Cơ - Tin học  
-        """)
-
-    with tab_2023:
-        st.markdown("""
-        + Ban tổ chức sự kiện **Giải bóng đá MIM Cup 2023** do Khoa Toán - Cơ - Tin học  
-        + Ban tổ chức sự kiện **Workshop MindX 2023** do CLB Toán Tin - HAMIC  
-        + Ban tổ chức sự kiện **Ngày hội chào tân Meliora 2023** do Trường Đại học Khoa học Tự nhiên  
-        + Ban tổ chức sự kiện **Team Building 2023** do Khoa Toán - Cơ - Tin học  
-        + Tình nguyện viên **Cuộc thi Toán học VMTC 2023** do Khoa Toán - Cơ - Tin học  
-        + Tình nguyện viên cuộc thi **Lớp tôi là số 1** năm 2023  
-        + Tình nguyện viên hỗ trợ tân sinh viên **K68** Khoa Toán - Cơ - Tin học năm 2023  
-        + Tình nguyện viên hỗ trợ **Mùa hè xanh 2023** do Khoa Toán - Cơ - Tin học & Khoa Sinh học  
-        """)
-
-    with tab_2024:
-        st.markdown("""
-        + Phó trưởng ban Chỉ đạo **Đội tình nguyện MIM24** trong chiến dịch **Sắc xanh Tự nhiên** tại Hòa Bình năm 2024  
-        + Ban tổ chức sự kiện **Giải bóng đá MIM Cup 2024** do Khoa Toán - Cơ - Tin học  
-        + Ban tổ chức sự kiện **Team Building 2024** do Khoa Toán - Cơ - Tin học  
-        + Ban tổ chức sự kiện **HUS Cheerleading 2024** do Trường Đại học Khoa học Tự nhiên  
-        """)
-
-    with tab_2025:
-        st.markdown("""
-        + Phó trưởng ban tổ chức cuộc thi **DataFlow 2025** do CLB HAMIC & CLB MIM Media  
-        """)
+    # Render for YEAR TAB
+    for tab, (_, year_info) in zip(year_tabs, activity_data.items()):
+        with tab:
+            activities = year_info.get("activities")
+            activity_contents = "\n".join(f"+ {item}" for item in activities)
+            st.write(activity_contents)
