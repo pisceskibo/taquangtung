@@ -42,6 +42,7 @@ def write_multi_phase(exp_item):
         raw_tasks = "\n".join([f"+ {task}" for task in phase.get("tasks")])
         indented_tasks = textwrap.indent(raw_tasks, "    ")
 
+        # Main multi experience
         task_label_header = f"""
         #### {phase.get("period")}: ({exp_time})   
         + **Chức vụ:** {phase.get("role")}
@@ -65,7 +66,11 @@ def write_mono_phase(exp_item):
     if department:
         label_infor_arrays.append(f"+ **Ban chuyên môn:** {department}")
 
-    # Main Experience
+    # List tasks of phases
+    raw_tasks = "\n".join([f"+ {task}" for task in exp_item.get("tasks")])
+    indented_tasks = textwrap.indent(raw_tasks, "    ")
+
+    # Main mono experience
     label_infor_arrays.extend(
         [
             f"+ **Chức vụ:** {exp_item.get('role')}",
@@ -75,10 +80,6 @@ def write_mono_phase(exp_item):
         ]
     )
     label_information = "\n".join(label_infor_arrays)
-
-    # List tasks of companies
-    raw_tasks = "\n".join([f"+ {task}" for task in exp_item.get("tasks", [])])
-    indented_tasks = textwrap.indent(raw_tasks, "    ")
 
     # All of experience
     full_exp_company = label_information + "\n" + indented_tasks
