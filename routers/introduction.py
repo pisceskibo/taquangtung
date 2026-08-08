@@ -59,7 +59,7 @@ def write_introduction():
         {table_rows}
     </table>
     """
-    st.write(table_html, unsafe_allow_html=True)
+    st.markdown(table_html, unsafe_allow_html=True)
 
     # Load CV JSON
     load_cv_path(info.get("cv_path"))

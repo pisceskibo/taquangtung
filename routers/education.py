@@ -39,35 +39,29 @@ def write_education():
         details_html = ""
         if item_school.get("details"):
             li_items = "".join([f"<li>{d}</li>" for d in item_school.get("details")])
-            details_html = (
-                f'<ul style="margin-top: 5px; padding-left: 20px;">{li_items}</ul>'
-            )
+            details_html = f'<ul style="margin-top: 5px; padding-left: 20px;">{li_items}</ul>'
 
         ## Danh sách danh mục achievement
         achievement_html = ""
         if item_school.get("achievement"):
-            achievement_html = (
-                f'<p style="margin: 0 0 5px 0;">{item_school.get("achievement")}</p>'
-            )
+            achievement_html = f'<p>{item_school.get("achievement")}</p>'
 
         ## Merge HTML with Code Block
         timeline_items_html += f"""
-<li style="position: relative; padding-left: 40px; margin-bottom: 20px;">
-<div style="background-color: {item_school.get("color")}; padding: 10px; border-radius: 6px; position: relative; color: white;">
-<h4>{item_school.get('time')}: {item_school.get("school")}</h4>
-<p>{item_school.get("description")}</p>
-{achievement_html}
-{details_html}
-</div>
-<div style="position: absolute; left: 0; top: 10px; width: 20px; height: 20px; border-radius: 50%; background-color: #00bfff;"></div>
-<div style="position: absolute; left: 9px; top: 28px; width: 2px; height: calc(100% - 10px); background-color: #00bfff;"></div>
-</li>
-"""
+        <li style="position: relative; padding-left: 40px; margin-bottom: 20px;">
+        <div style="background-color: {item_school.get("color")}; padding: 10px; border-radius: 6px; position: relative; color: white;">
+        <h4>{item_school.get('time')}: {item_school.get("school")}</h4>
+        <p>{item_school.get("description")}</p>
+        {achievement_html}
+        {details_html}
+        </div>
+        <div style="position: absolute; left: 0; top: 10px; width: 20px; height: 20px; border-radius: 50%; background-color: #00bfff;"></div>
+        <div style="position: absolute; left: 9px; top: 28px; width: 2px; height: calc(100% - 10px); background-color: #00bfff;"></div>
+        </li>"""
 
     full_timeline_html = f"""
-<ul style="list-style-type: none; padding-left: 0;">
-{timeline_items_html}
-</ul>
-"""
+        <ul style="list-style-type: none; padding-left: 0;">
+            {timeline_items_html}
+        </ul>"""
 
     st.markdown(full_timeline_html, unsafe_allow_html=True)
