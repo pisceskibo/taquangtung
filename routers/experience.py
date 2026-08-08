@@ -26,7 +26,7 @@ def write_experience():
             write_multi_phase(exp_item)
         else:
             # Trường hợp thông thường
-            write_mono_phase(exp_item)
+            write_basic_phase(exp_item)
 
         st.image(exp_item["image"], caption=exp_item.get("caption", ""))
 
@@ -54,7 +54,7 @@ def write_multi_phase(exp_item):
         st.write(full_task_phase)
 
 # Một giai đoạn
-def write_mono_phase(exp_item):
+def write_basic_phase(exp_item):
     exp_time = exp_item.get("time")
     exp_year = caculate_year_experience(exp_time)
     label_infor_arrays = []
