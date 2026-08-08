@@ -11,7 +11,7 @@ def load_activity_data_json():
         return json.load(f)
 
 
-# Nội dung activities
+# Nội dung Activities
 def write_activitiy():
     # Load datasets
     activity_data = load_activity_data_json()

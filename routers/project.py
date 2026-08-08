@@ -11,7 +11,7 @@ def load_project_data_json():
         return json.load(f)
 
 
-# Nội dung projects
+# Nội dung Projects
 def write_project():
     # Load datasets
     project_data = load_project_data_json()

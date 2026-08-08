@@ -1,5 +1,5 @@
 # Thư viện cần thiết
-import streamlit as st 
+import streamlit as st
 import json
 import textwrap
 from routers.function import caculate_year_experience
