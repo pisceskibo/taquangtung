@@ -21,59 +21,66 @@ def write_experience():
     st.write("""<hr style="border: 1px solid #ccc;">""", unsafe_allow_html=True)
 
     for exp_item in experiences_data:
-        # Trường hợp chia nhiều giai đoạn
         if "phases" in exp_item:
-            st.markdown(f"### {exp_item.get("id")}. {exp_item.get("title")}:")
-
-            for phase in exp_item.get("phases"):
-                exp_time = phase.get("time")
-                exp_year = caculate_year_experience(exp_time)
-
-                # List tasks of sub phases
-                raw_tasks = "\n".join([f"+ {task}" for task in phase.get("tasks")])
-                indented_tasks = textwrap.indent(raw_tasks, "    ")
-
-                task_label_header = f"""
-                #### {phase.get("period")}: ({exp_time})   
-                + **Chức vụ:** {phase.get("role")}
-                + **Kinh nghiệm:** {exp_year}
-                + **Nhiệm vụ:**
-                """
-                full_task_phase = textwrap.dedent(task_label_header).strip() + "\n" + indented_tasks
-
-                st.write(full_task_phase)
-
-        # Trường hợp thông thường
+            # Trường hợp chia nhiều giai đoạn
+            write_multi_phase(exp_item)
         else:
-            exp_time = exp_item.get("time")
-            exp_year = caculate_year_experience(exp_time)
-            label_infor_arrays = []
-
-            st.markdown(f"### {exp_item.get('id')}. {exp_item.get('title')}:")
-
-            # Nếu có department keys 
-            department = exp_item.get("department")
-            if department:
-                label_infor_arrays.append(f"+ **Ban chuyên môn:** {department}")
-
-            # Main Experience
-            label_infor_arrays.extend(
-                [
-                    f"+ **Chức vụ:** {exp_item.get('role')}",
-                    f"+ **Thời gian:** {exp_time}",
-                    f"+ **Kinh nghiệm:** {exp_year}",
-                    "+ **Nhiệm vụ:**",
-                ]
-            )
-            label_information = "\n".join(label_infor_arrays)
-
-            # List tasks of companies
-            raw_tasks = "\n".join([f"+ {task}" for task in exp_item.get("tasks", [])])
-            indented_tasks = textwrap.indent(raw_tasks, "    ")
-
-            # All of experience
-            full_exp_company = label_information + "\n" + indented_tasks
-
-            st.markdown(full_exp_company)
+            # Trường hợp thông thường
+            write_mono_phase(exp_item)
 
         st.image(exp_item["image"], caption=exp_item.get("caption", ""))
+
+# Nhiều giai đoạn
+def write_multi_phase(exp_item):
+    st.markdown(f"### {exp_item.get("id")}. {exp_item.get("title")}:")
+    
+    for phase in exp_item.get("phases"):
+        exp_time = phase.get("time")
+        exp_year = caculate_year_experience(exp_time)
+
+        # List tasks of sub phases
+        raw_tasks = "\n".join([f"+ {task}" for task in phase.get("tasks")])
+        indented_tasks = textwrap.indent(raw_tasks, "    ")
+
+        task_label_header = f"""
+        #### {phase.get("period")}: ({exp_time})   
+        + **Chức vụ:** {phase.get("role")}
+        + **Kinh nghiệm:** {exp_year}
+        + **Nhiệm vụ:**
+        """
+        full_task_phase = textwrap.dedent(task_label_header).strip() + "\n" + indented_tasks
+
+        st.write(full_task_phase)
+
+# Một giai đoạn
+def write_mono_phase(exp_item):
+    exp_time = exp_item.get("time")
+    exp_year = caculate_year_experience(exp_time)
+    label_infor_arrays = []
+
+    st.markdown(f"### {exp_item.get('id')}. {exp_item.get('title')}:")
+
+    # Nếu có department keys 
+    department = exp_item.get("department")
+    if department:
+        label_infor_arrays.append(f"+ **Ban chuyên môn:** {department}")
+
+    # Main Experience
+    label_infor_arrays.extend(
+        [
+            f"+ **Chức vụ:** {exp_item.get('role')}",
+            f"+ **Thời gian:** {exp_time}",
+            f"+ **Kinh nghiệm:** {exp_year}",
+            "+ **Nhiệm vụ:**",
+        ]
+    )
+    label_information = "\n".join(label_infor_arrays)
+
+    # List tasks of companies
+    raw_tasks = "\n".join([f"+ {task}" for task in exp_item.get("tasks", [])])
+    indented_tasks = textwrap.indent(raw_tasks, "    ")
+
+    # All of experience
+    full_exp_company = label_information + "\n" + indented_tasks
+
+    st.write(full_exp_company)
