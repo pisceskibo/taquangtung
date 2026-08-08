@@ -1,6 +1,6 @@
 # Thư viện cần thiết
 import streamlit as st 
-from router.function import caculate_year_experience
+from routers.function import caculate_year_experience
 
 # Nội dung experience
 def write_experience():

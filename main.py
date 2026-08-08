@@ -2,8 +2,8 @@
 import streamlit as st 
 
 # Xuất Modulo
-from router.function import make_circle
-from router import introduction, education, experience, project, activities, certification
+from routers.function import make_circle
+from routers import introduction, education, experience, project, activities, certification
 
 
 # Title of Page
