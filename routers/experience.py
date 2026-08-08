@@ -1,132 +1,79 @@
 # Thư viện cần thiết
 import streamlit as st 
+import json
+import textwrap
 from routers.function import caculate_year_experience
 
-# Nội dung experience
+
+EXPERIENCE_DATASET = "datasets/experience_data.json"
+
+@st.cache_data
+def load_experience_data_json():
+    with open(EXPERIENCE_DATASET, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+# Nội dung Experience
 def write_experience():
-    st.write(
-        """<hr style="border: 1px solid #ccc;">""", unsafe_allow_html=True
-    )
+    # Load datasets
+    experiences_data = load_experience_data_json()
 
-    time_space_mimmedia = "10/2021 - 04/2025"
-    st.write(
-        f"""
-        ### 1. CLB MIM Media:
-        + Chức vụ: Phó Chủ nhiệm CLB
-        + Thời gian hoạt động: {time_space_mimmedia}
-        + Kinh nghiệm: {caculate_year_experience(time_space_mimmedia)}
-        + Nhiệm vụ: Quản lý và tổ chức các hoạt động về mảng truyền thông của Khoa 
-        """)
-    st.image("images/mimmedia.jpg", caption="CLB MIM Media")
+    st.write("""<hr style="border: 1px solid #ccc;">""", unsafe_allow_html=True)
 
-    time_space_hamic = "12/2022 - 08/2024"
-    st.write(
-        f"""
-        ### 2. CLB Toán Tin - HAMIC:
-        + Chức vụ: Trưởng nhóm
-        + Ban chuyên môn: Ban thiết kế và Lập trình Web
-        + Thời gian hoạt động: {time_space_hamic}
-        + Kinh nghiệm: {caculate_year_experience(time_space_hamic)}
-        + Nhiệm vụ: 
-            + Thiết kế giao diện Website cho các đơn vị tổ chức
-            + Tổ chức hoạt động giảng dạy những kỹ năng chuyên môn về Lập trình
-            + Tổ chức cuộc thi Lập trình Web và Phân tích dữ liệu lớn
-        """)
-    st.image("images/hamic.jpg", caption="CLB Toán Tin - HAMIC")
+    for exp_item in experiences_data:
+        # Trường hợp chia nhiều giai đoạn
+        if "phases" in exp_item:
+            st.markdown(f"### {exp_item.get("id")}. {exp_item.get("title")}:")
 
-    time_space_mim = "08/2023 - 01/2025"
-    st.write(
-        f"""
-        ### 3. Khoa Toán - Cơ - Tin học:
-        + Chức vụ: Ủy viên BCH Liên Chi Hội 
-        + Thời gian hoạt động: {time_space_mim}
-        + Kinh nghiệm: {caculate_year_experience(time_space_mim)}
-        + Nhiệm vụ: Thiết kế ấn phẩm và Đầu mối sự kiện
-        """)
-    st.image("images/mim.jpg", caption="Khoa Toán - Cơ - Tin học")
+            for phase in exp_item.get("phases"):
+                exp_time = phase.get("time")
+                exp_year = caculate_year_experience(exp_time)
 
-    time_space_smartlog = "12/2022 - 02/2023"
-    st.write(
-        f"""
-        ### 4. Công ty Smartlog:
-        + Chức vụ: Lập trình viên Python (Python Developer)
-        + Thời gian: {time_space_smartlog}
-        + Kinh nghiệm: {caculate_year_experience(time_space_smartlog)}
-        + Nhiệm vụ: 
-            + Quản lý và phát triển thuật toán tối ưu hóa chiến lược định kỳ
-            + Phân tích và xây dựng Website trực quan hóa dữ liệu
-        """)
-    st.image("images/smartlog.jpg", caption="Công ty Smartlog")
+                # List tasks of sub phases
+                raw_tasks = "\n".join([f"+ {task}" for task in phase.get("tasks")])
+                indented_tasks = textwrap.indent(raw_tasks, "    ")
 
-    time_space_gtsystem = "12/2024 - 07/2026"
-    st.write(
-        f"""
-        ### 5. Công ty GTSystem Vietnam:
-        + Chức vụ: Lập trình viên Python (Python Developer)
-        + Thời gian: {time_space_gtsystem}
-        + Kinh nghiệm: {caculate_year_experience(time_space_gtsystem)}
-        + Nhiệm vụ: 
-            + Phân tích và thiết kế hệ thống Window
-            + Xây dựng và quản trị hệ thống dự án tự động hóa
-        """)
-    st.image("images/gtsystem.jpg", caption="Công ty GTSystem Việt Nam (GTSVN)")
+                task_label_header = f"""
+                #### {phase.get("period")}: ({exp_time})   
+                + **Chức vụ:** {phase.get("role")}
+                + **Kinh nghiệm:** {exp_year}
+                + **Nhiệm vụ:**
+                """
+                full_task_phase = textwrap.dedent(task_label_header).strip() + "\n" + indented_tasks
 
-    time_space_otani = "01/2026 - 04/2026"
-    st.write(
-        f"""
-        ### 6. Công ty Otani UP:
-        + Chức vụ: Lập trình viên Python (Python Developer)
-        + Thời gian: {time_space_otani}
-        + Kinh nghiệm: {caculate_year_experience(time_space_otani)}
-        + Nhiệm vụ: 
-            + Xây dựng và thiết kế hệ thống Website
-            + Quản lý và tối ưu hóa hệ thống dự án kinh doanh sản xuất
-        """)
-    st.image("images/otaniup.jpg", caption="Công ty Otani Unique Project (Ontani U.P.)")
+                st.write(full_task_phase)
 
-    time_space_lyrax = "04/2026 - 08/2026"
-    st.write(
-        f"""
-        ### 7. Công ty cổ phần Công nghệ LYRAX:
-        + Chức vụ: Lập trình viên Python (Python Developer)
-        + Thời gian: {time_space_lyrax}
-        + Kinh nghiệm: {caculate_year_experience(time_space_lyrax)}
-        + Nhiệm vụ: 
-            + Xây dựng và phát triển ứng dụng Website AI/LLM
-            + Tối ưu hóa và xử lý dữ liệu tự động của hệ thống
-        """)
-    st.image("images/lyraxgroup.jpg", caption="Công ty cổ phần Công nghệ LYRAX (LYRAX GROUP)")
+        # Trường hợp thông thường
+        else:
+            exp_time = exp_item.get("time")
+            exp_year = caculate_year_experience(exp_time)
+            label_infor_arrays = []
 
-    time_space_rikkeisoft = "05/2024 - 09/2024"
-    time_space_rikkeisoft_2 = "07/2026 - nay"
-    st.write(
-        f"""
-        ### 8. Công ty Rikkeisoft:
-        #### Giai đoạn 1: ({time_space_rikkeisoft})
-        + Chức vụ: Lập trình viên Python (Python Developer)
-        + Kinh nghiệm: {caculate_year_experience(time_space_rikkeisoft)}
-        + Nhiệm vụ: 
-            + Phân tích và thiết kế hệ thống Website
-            + Xây dựng và bảo trì dự án
+            st.markdown(f"### {exp_item.get('id')}. {exp_item.get('title')}:")
 
-        #### Giai đoạn 2: ({time_space_rikkeisoft_2})
-        + Chức vụ: Lập trình viên Python (Python Developer)
-        + Kinh nghiệm: {caculate_year_experience(time_space_rikkeisoft_2)}
-        + Nhiệm vụ: 
-            + Phát triển và tối ưu hệ thống xử lý dữ liệu lớn
-            + Phân tích và thiết kế hệ thống cùng với SamSung
-        """)
-    st.image("images/rikkei.jpg", caption="Công ty cổ phần Rikkeisoft")
+            # Nếu có department keys 
+            department = exp_item.get("department")
+            if department:
+                label_infor_arrays.append(f"+ **Ban chuyên môn:** {department}")
 
-    # time_space_rikkeieducation = "05/2026 - 07/2026"
-    # st.write(
-    #     f"""
-    #     ### 9. Công ty cổ phần Rikkei Education:
-    #     + Chức vụ: Giảng viên lập trình Python
-    #     + Thời gian: {time_space_rikkeieducation}
-    #     + Kinh nghiệm: {caculate_year_experience(time_space_rikkeieducation)}
-    #     + Nhiệm vụ: 
-    #         + Giảng dạy và hướng dẫn học viên về lập trình Python
-    #         + Xây dựng và phát triển chương trình đào tạo Python chuyên sâu
-    #     """)
-    # st.image("images/rikkeieducation.jpg", caption="Công ty Rikkei Education")
+            # Main Experience
+            label_infor_arrays.extend(
+                [
+                    f"+ **Chức vụ:** {exp_item.get('role')}",
+                    f"+ **Thời gian:** {exp_time}",
+                    f"+ **Kinh nghiệm:** {exp_year}",
+                    "+ **Nhiệm vụ:**",
+                ]
+            )
+            label_information = "\n".join(label_infor_arrays)
+
+            # List tasks of companies
+            raw_tasks = "\n".join([f"+ {task}" for task in exp_item.get("tasks", [])])
+            indented_tasks = textwrap.indent(raw_tasks, "    ")
+
+            # All of experience
+            full_exp_company = label_information + "\n" + indented_tasks
+
+            st.markdown(full_exp_company)
+
+        st.image(exp_item["image"], caption=exp_item.get("caption", ""))

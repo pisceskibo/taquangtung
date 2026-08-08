@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "title": "CLB MIM Media",
+    "role": "Phó Chủ nhiệm CLB",
+    "time": "10/2021 - 04/2025",
+    "tasks": [
+      "Quản lý và tổ chức các hoạt động về mảng truyền thông của Khoa",
+      "Lập kế hoạch các sự kiện liên kết với doanh nghiệp"
+    ],
+    "image": "images/mimmedia.jpg",
+    "caption": "CLB MIM Media"
+  },
+  {
+    "id": 2,
+    "title": "CLB Toán Tin - HAMIC",
+    "role": "Trưởng nhóm",
+    "department": "Ban thiết kế và Lập trình Web",
+    "time": "12/2022 - 08/2024",
+    "tasks": [
+      "Thiết kế giao diện Website cho các đơn vị tổ chức",
+      "Tổ chức hoạt động giảng dạy những kỹ năng chuyên môn về Lập trình",
+      "Tổ chức cuộc thi Lập trình Web và Phân tích dữ liệu lớn"
+    ],
+    "image": "images/hamic.jpg",
+    "caption": "CLB Toán Tin - HAMIC"
+  },
+  {
+    "id": 3,
+    "title": "Khoa Toán - Cơ - Tin học",
+    "role": "Ủy viên BCH Liên Chi Hội",
+    "time": "08/2023 - 01/2025",
+    "tasks": [
+      "Thiết kế ấn phẩm và Đầu mối sự kiện",
+      "Quản lý và hỗ trợ đội ngũ sinh viên trong Khoa"
+    ],
+    "image": "images/mim.jpg",
+    "caption": "Khoa Toán - Cơ - Tin học"
+  },
+  {
+    "id": 4,
+    "title": "Công ty Smartlog",
+    "role": "Lập trình viên Python (Python Developer)",
+    "time": "12/2022 - 02/2023",
+    "tasks": [
+      "Quản lý và phát triển thuật toán tối ưu hóa chiến lược định kỳ",
+      "Phân tích và xây dựng Website trực quan hóa dữ liệu"
+    ],
+    "image": "images/smartlog.jpg",
+    "caption": "Công ty Smartlog"
+  },
+  {
+    "id": 5,
+    "title": "Công ty GTSystem Vietnam",
+    "role": "Lập trình viên Python (Python Developer)",
+    "time": "12/2024 - 07/2026",
+    "tasks": [
+      "Phân tích và thiết kế hệ thống Window",
+      "Xây dựng và quản trị hệ thống dự án tự động hóa"
+    ],
+    "image": "images/gtsystem.jpg",
+    "caption": "Công ty GTSystem Việt Nam (GTSVN)"
+  },
+  {
+    "id": 6,
+    "title": "Công ty Otani UP",
+    "role": "Lập trình viên Python (Python Developer)",
+    "time": "01/2026 - 04/2026",
+    "tasks": [
+      "Xây dựng và thiết kế hệ thống Website",
+      "Quản lý và tối ưu hóa hệ thống dự án kinh doanh sản xuất"
+    ],
+    "image": "images/otaniup.jpg",
+    "caption": "Công ty Otani Unique Project (Ontani U.P.)"
+  },
+  {
+    "id": 7,
+    "title": "Công ty cổ phần Công nghệ LYRAX",
+    "role": "Lập trình viên Python (Python Developer)",
+    "time": "04/2026 - 08/2026",
+    "tasks": [
+      "Xây dựng và phát triển ứng dụng Website AI/LLM",
+      "Tối ưu hóa và xử lý dữ liệu tự động của hệ thống"
+    ],
+    "image": "images/lyraxgroup.jpg",
+    "caption": "Công ty cổ phần Công nghệ LYRAX (LYRAX GROUP)"
+  },
+  {
+    "id": 8,
+    "title": "Công ty Rikkeisoft",
+    "image": "images/rikkei.jpg",
+    "caption": "Công ty cổ phần Rikkeisoft",
+    "phases": [
+      {
+        "period": "Giai đoạn 1",
+        "time": "05/2024 - 09/2024",
+        "role": "Lập trình viên Python (Python Developer)",
+        "tasks": [
+          "Phân tích và thiết kế hệ thống Website",
+          "Xây dựng và bảo trì dự án"
+        ]
+      },
+      {
+        "period": "Giai đoạn 2",
+        "time": "07/2026 - nay",
+        "role": "Lập trình viên Python (Python Developer)",
+        "tasks": [
+          "Phát triển và tối ưu hệ thống xử lý dữ liệu lớn",
+          "Phân tích và thiết kế hệ thống cùng với SamSung SDS"
+        ]
+      }
+    ]
+  }
+]

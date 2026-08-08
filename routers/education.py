@@ -22,7 +22,7 @@ def write_education():
 
     # 1. Trình độ chuyên môn:
     st.markdown("### 1. Trình độ chuyên môn hiện tại:")
-    st.markdown(
+    st.write(
     f"""
     + **Trường:** {degree.get("university")}
     + **Chuyên ngành:** {degree.get("majority")}
@@ -64,4 +64,4 @@ def write_education():
             {timeline_items_html}
         </ul>"""
 
-    st.markdown(full_timeline_html, unsafe_allow_html=True)
+    st.write(full_timeline_html, unsafe_allow_html=True)

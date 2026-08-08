@@ -23,14 +23,14 @@ def write_introduction():
 
     # 1. Tổng quan:
     st.markdown("### 1. Tổng quan:")
-    st.markdown(
+    st.write(
         f'<div style="text-align: justify;">{info.get("summary")}</div><br>',
-        unsafe_allow_html=True,
+        unsafe_allow_html=True
     )
 
     # 2. Thông tin chi tiết:
     st.markdown("### 2. Thông tin chi tiết:")
-    st.markdown(
+    st.write(
         f"""
         + **Họ và tên:** {info.get("full_name")}
         + **Năm sinh:** {info.get("date_of_birth")}
@@ -59,7 +59,7 @@ def write_introduction():
         {table_rows}
     </table>
     """
-    st.markdown(table_html, unsafe_allow_html=True)
+    st.write(table_html, unsafe_allow_html=True)
 
     # Load CV JSON
     load_cv_path(info.get("cv_path"))
