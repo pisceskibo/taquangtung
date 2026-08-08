@@ -69,7 +69,14 @@ def load_cv_path(pdf_cv_file_path):
     with open(pdf_cv_file_path, "rb") as f:
         pdf_bytes = f.read()
 
-    with st.expander("👉 Xem CV trực tiếp"):
+    with st.expander("**👉 Xem CV trực tiếp**"):
         base64_pdf = base64.b64encode(pdf_bytes).decode("utf-8")
         pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="100%" height="500" type="application/pdf"></iframe>'
         st.markdown(pdf_display, unsafe_allow_html=True)
+
+        st.download_button(
+            label="📥 Download (PDF)",
+            data=pdf_bytes,
+            file_name="CV_TaQuangTung_Python.pdf",
+            mime="application/pdf"
+        )
