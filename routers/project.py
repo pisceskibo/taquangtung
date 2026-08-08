@@ -1,8 +1,21 @@
 # Thư viện cần thiết
-import streamlit as st 
+import streamlit as st
+import json
+
+
+PROJECT_DATASET = "datasets/project_data.json"
+
+@st.cache_data
+def load_project_data_json():
+    with open(PROJECT_DATASET, "r", encoding="utf-8") as f:
+        return json.load(f)
+
 
 # Nội dung projects
 def write_project():
+    # Load datasets
+    project_data = load_project_data_json()
+
     st.write("""<hr style="border: 1px solid #ccc;">""", unsafe_allow_html=True)
 
     st.write(
@@ -50,144 +63,47 @@ def write_project():
     st.write("<hr>", unsafe_allow_html=True)
 
     if st.session_state.selected_project_type == "company":
-        get_company_project()
+        get_company_project(project_data[0])
     elif st.session_state.selected_project_type == "personal":
-        get_personal_projects()
+        get_personal_projects(project_data[1])
     else:
         st.markdown("<p style='text-align: center; font-style: italic;'>💡 Bấm vào một trong hai thẻ danh mục phía trên để xem danh sách dự án chi tiết.</p>", unsafe_allow_html=True)
 
+# Thông tin dữ liệu các dự án cá nhân
+def get_personal_projects(personal_project_dataset):
+    # Load datasets
+    personal_project_list = personal_project_dataset.get("projects")
 
-# Thông tin dữ liệu các dự án
-def get_personal_projects():
-    st.write(
-        """
-        ## 🗃️ PERSONAL PROJECTS
-        >> *Dưới đây là các dự án cá nhân được triển khai trong môi trường thực tế.*
-        
-        ---
-        
-        ### 1. BOOK MANAGEMENT APP:
-        + Project: Thiết kế giao diện phần mềm quản lý sách 
-        + Programming Language: Python
-        + Framework: Tkinter
-        + Link mô tả: https://github.com/pisceskibo/BookManagement 
+    st.markdown("## 🗃️ PERSONAL PROJECTS")
+    st.write(f">> *{personal_project_dataset.get("caption")}*")
 
-        ---
+    for item_personal in personal_project_list:
+        detail_personal_array = [
+            f"### {item_personal.get('id')}. {item_personal.get('title')}:",
+            f"+ **Project:** {item_personal.get('project')}",
+            f"+ **Programming Language:** {item_personal.get('lang')}",
+            f"+ **Framework:** {item_personal.get('framework')}",
+            f"+ **Link mô tả:** [{item_personal.get('link')}]({item_personal.get('link')})"
+        ]
+        st.markdown("---")
+        st.write("\n".join(detail_personal_array))
 
-        ### 2. DOCUMENT MANAGEMENT:
-        + Project: Hệ thống quản lý tài liệu Document
-        + Programming Language: Python, HTML, CSS, JavaScript
-        + Framework: Django
-        + Link mô tả: https://github.com/pisceskibo/ManagerDocument 
+# Thông tin dữ liệu các dự án doanh nghiệp
+def get_company_project(company_project_dataset):
+    # Load datasets
+    company_project_list = company_project_dataset.get("projects")
 
-        ---
+    st.markdown("## 🗃️ COMPANY PROJECTS")
+    st.write(f">> *{company_project_dataset.get("caption")}*")
 
-        ### 3. LIBRARY MANAGEMENT:
-        + Project: Hệ thống quản lý thư viện tài liệu điện tử số
-        + Programming Language: Python, HTML, CSS, JavaScript
-        + Framework: FastAPI, Tkinter, Streamlit
-        + Link mô tả: https://github.com/pisceskibo/LibraryManagement 
-
-        ---
-
-        ### 4. TIME CHECKING:
-        + Project: Hệ thống chấm công theo yêu cầu
-        + Programming Language: Python
-        + Framework: FastAPI
-        + Link mô tả: https://github.com/pisceskibo/TimeChecking 
-
-        ---
-
-        ### 5. SUDOKU GAME:
-        + Project: Mô hình hóa các phiên bản game Sudoku
-        + Programming Language: Python
-        + Thư viện: PuLP, Gurobipy
-        + Link mô tả: https://github.com/pisceskibo/SudokuGame
-
-        ---
-
-        ### 6. CREDIT CARD APPROVAL PREDICTION:
-        + Project: Hệ thống phân tích và dự đoán mô hình phê duyệt thẻ tín dụng ngân hàng
-        + Programming Language: Python, Cython
-        + Framework: Streamlit
-        + Link mô tả: https://github.com/pisceskibo/CreditCardApprovalPrediction
-
-        ---
-
-        ### 7. OCR DOCUMENT SYSTEM:
-        + Project: Hệ thống trích xuất dữ liệu Document OCR
-        + Programming Language: Python, HTML, CSS
-        + Framework: Pyramid
-        + Link mô tả: https://github.com/pisceskibo/SystemDocumentOCR
-
-        ---
-        
-        ### 8. SENTIMENT ANALYSIS SYSTEM:
-        + Project: Hệ thống phân tích cảm xúc bình luận
-        + Programming Language: Python, VueJS, CSS, JavaScript
-        + Framework: Flask
-        + Link mô tả: https://github.com/pisceskibo/SentimentAnalysisSystem
-        """
-    )
-
-def get_company_project():
-    st.write(
-        """
-        ## 🗃️ COMPANY PROJECTS
-        >> *Dưới đây là các hệ thống quy mô lớn đã được triển khai trong môi trường doanh nghiệp thực tế.*
-
-        ---
-        
-        ### 1. SOCIAL ACCOUNT MANAGEMENT:
-        + Project: Hệ thống quản lý thông tin mạng xã hội
-        + Role: Python Developer
-        + Programming Language: Python, HTML, CSS, JavaScript
-        + Framework: Flask
-        + Description & Result: Thiết kế hệ thống tổng hợp dữ liệu tài khoản mạng xã hội và tạo báo cáo thống kê danh mục tài khoản.
-
-        ---
-
-        ### 2. AUTOMOTIVE TESTING TOOL OF CANOE FOR LINUX DEVICE:
-        + Project: Hệ thống xử lý và kiểm thử ô tô của CANoe trên thiết bị LINUX
-        + Role: Python Developer
-        + Programming Language: Python, C/C++
-        + Framework: PyQT
-        + Description & Result: Xây dựng và phát triển ứng dụng Software/Firmware hỗ trợ cho việc kiểm thử tự động hóa quá trình tổng hợp các lỗi sửa sai trên thiết bị xe ô tô.
-
-        ---
-
-        ### 3. MULTILINGUAL ZOOM MEETING MINUTES EXTRACTION:
-        + Project: Hệ thống trích xuất và trao đổi cuộc họp Meeting đa ngôn ngữ
-        + Role: Python Developer
-        + Programming Language: Python, VueJS, SCSS, JavaScript
-        + Framework: FastAPI
-        + Description & Result: Phát triển các tính năng cuộc họp cốt lõi bao gồm việc truyền phát dữ liệu âm thanh/video chất lượng cao theo thời gian thực.
-
-        ---
-
-        ### 4. SOCIAL BLOG MANAGEMENT SYSTEM:
-        + Project: Hệ thống quản lý bài đăng mạng xã hội
-        + Role: Python Developer
-        + Programming Language: Python, VueJS, SCSS, JavaScript
-        + Framework: FastAPI
-        + Description & Result: Thiết kế hệ thống quản lý và kiếm soát các bài đăng trên mạng xã hội có kiểm duyệt theo tiêu chuẩn cộng đồng.
-
-        ---
-
-        ### 5. LEAVE HUB ATTENDANCE SYSTEM WITH HRMS:
-        + Project: Hệ thống quản lý chấm công và nghỉ phép của nhân viên 
-        + Role: Python Developer
-        + Programming Language: Python, CSS, TypeScript, JavaScript
-        + Framework: FastAPI, Frappe
-        + Description & Result: Thiết kế hệ thống Website quản lý chấm công, thời gian làm việc và các đơn xin nghỉ phép của nhân viên trong công ty.
-
-        ---
-
-        ### 6. NEXT SUPPLY CHAIN MANAGEMENT OF NSCM:
-        + Project: Hệ thống quản lý chuỗi cung ứng thế hệ mới 
-        + Role: Python Developer
-        + Programming Language: Python, PL/SQL
-        + Framework: Pandas, Polars
-        + Description & Result: Thiết kế và chuyển đổi thông tin dữ liệu chuỗi cung ứng theo các phiên bản của hệ thống.
-        """
-    )
+    for item_company in company_project_list:
+        detail_company_array = [
+            f"### {item_company.get('id')}. {item_company.get('title')}:",
+            f"+ **Project:** {item_company.get('project')}",
+            f"+ **Role:** {item_company.get('role')}",
+            f"+ **Programming Language:** {item_company.get('lang')}",
+            f"+ **Framework:** {item_company.get('framework')}",
+            f"+ **Description & Result:** {item_company.get('description')}",
+        ]
+        st.markdown("---")
+        st.write("\n".join(detail_company_array))

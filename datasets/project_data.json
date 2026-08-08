@@ -1,0 +1,134 @@
+[
+    {
+        "project_type": "company",
+        "project_category": "DỰ ÁN THỰC TẾ",
+        "caption": "Dưới đây là các hệ thống quy mô lớn đã được triển khai trong môi trường doanh nghiệp thực tế.",
+        "projects": [
+            {
+                "id": 1,
+                "title": "SOCIAL ACCOUNT MANAGEMENT",
+                "project": "Hệ thống quản lý thông tin mạng xã hội",
+                "role": "Python Developer",
+                "lang": "Python, HTML, CSS, JavaScript",
+                "framework": "Flask",
+                "description": "Thiết kế hệ thống tổng hợp dữ liệu tài khoản mạng xã hội và tạo báo cáo thống kê danh mục tài khoản."
+            },
+            {
+                "id": 2,
+                "title": "AUTOMOTIVE TESTING TOOL OF CANOE FOR LINUX DEVICE",
+                "project": "Hệ thống xử lý và kiểm thử ô tô của CANoe trên thiết bị LINUX",
+                "role": "Python Developer",
+                "lang": "Python, C/C++",
+                "framework": "PyQT",
+                "description": "Xây dựng và phát triển ứng dụng Software/Firmware hỗ trợ cho việc kiểm thử tự động hóa quá trình tổng hợp các lỗi sửa sai trên thiết bị xe ô tô."
+            },
+            {
+                "id": 3,
+                "title": "MULTILINGUAL ZOOM MEETING MINUTES EXTRACTION",
+                "project": "Hệ thống trích xuất và trao đổi cuộc họp Meeting đa ngôn ngữ",
+                "role": "Python Developer",
+                "lang": "Python, VueJS, SCSS, JavaScript",
+                "framework": "FastAPI",
+                "description": "Phát triển các tính năng cuộc họp cốt lõi bao gồm việc truyền phát dữ liệu âm thanh/video chất lượng cao theo thời gian thực."
+            },
+            {
+                "id": 4,
+                "title": "SOCIAL BLOG MANAGEMENT SYSTEM",
+                "project": "Hệ thống quản lý bài đăng mạng xã hội",
+                "role": "Python Developer",
+                "lang": "Python, VueJS, SCSS, JavaScript",
+                "framework": "FastAPI",
+                "description": "Thiết kế hệ thống quản lý và kiếm soát các bài đăng trên mạng xã hội có kiểm duyệt theo tiêu chuẩn cộng đồng."
+            },
+            {
+                "id": 5,
+                "title": "LEAVE HUB ATTENDANCE SYSTEM WITH HRMS",
+                "project": "Hệ thống quản lý chấm công và nghỉ phép của nhân viên",
+                "role": "Python Developer",
+                "lang": "Python, CSS, TypeScript, JavaScript",
+                "framework": "FastAPI, Frappe",
+                "description": "Thiết kế hệ thống Website quản lý chấm công, thời gian làm việc và các đơn xin nghỉ phép của nhân viên trong công ty."
+            },
+            {
+                "id": 6,
+                "title": "NEXT SUPPLY CHAIN MANAGEMENT OF NSCM",
+                "project": "Hệ thống quản lý chuỗi cung ứng thế hệ mới",
+                "role": "Python Developer",
+                "lang": "Python, PL/SQL",
+                "framework": "Pandas, Polars",
+                "description": "Thiết kế và chuyển đổi thông tin dữ liệu chuỗi cung ứng theo các phiên bản của hệ thống."
+            }
+        ]
+    },
+    {
+        "project_type": "personal",
+        "project_category": "DỰ ÁN CÁ NHÂN",
+        "caption": "Dưới đây là các dự án cá nhân được triển khai trong môi trường thực tế.",
+        "projects": [
+            {
+                "id": 1,
+                "title": "BOOK MANAGEMENT APP",
+                "project": "Thiết kế giao diện phần mềm quản lý sách",
+                "lang": "Python",
+                "framework": "Tkinter",
+                "link": "https://github.com/pisceskibo/BookManagement"
+            },
+            {
+                "id": 2,
+                "title": "DOCUMENT MANAGEMENT",
+                "project": "Hệ thống quản lý tài liệu Document",
+                "lang": "Python, HTML, CSS, JavaScript",
+                "framework": "Django",
+                "link": "https://github.com/pisceskibo/ManagerDocument"
+            },
+            {
+                "id": 3,
+                "title": "LIBRARY MANAGEMENT",
+                "project": "Hệ thống quản lý thư viện tài liệu điện tử số",
+                "lang": "Python, HTML, CSS, JavaScript",
+                "framework": "FastAPI, Tkinter, Streamlit",
+                "link": "https://github.com/pisceskibo/LibraryManagement"
+            },
+            {
+                "id": 4,
+                "title": "TIME CHECKING",
+                "project": "Hệ thống chấm công theo yêu cầu",
+                "lang": "Python",
+                "framework": "FastAPI",
+                "link": "https://github.com/pisceskibo/TimeChecking"
+            },
+            {
+                "id": 5,
+                "title": "SUDOKU GAME",
+                "project": "Mô hình hóa các phiên bản game Sudoku",
+                "lang": "Python",
+                "framework": "PuLP, Gurobipy",
+                "link": "https://github.com/pisceskibo/SudokuGame"
+            },
+            {
+                "id": 6,
+                "title": "CREDIT CARD APPROVAL PREDICTION",
+                "project": "Hệ thống phân tích và dự đoán mô hình phê duyệt thẻ tín dụng ngân hàng",
+                "lang": "Python, Cython",
+                "framework": "Streamlit",
+                "link": "https://github.com/pisceskibo/CreditCardApprovalPrediction"
+            },
+            {
+                "id": 7,
+                "title": "OCR DOCUMENT SYSTEM",
+                "project": "Hệ thống trích xuất dữ liệu Document OCR",
+                "lang": "Python, HTML, CSS",
+                "framework": "Pyramid",
+                "link": "https://github.com/pisceskibo/SystemDocumentOCR"
+            },
+            {
+                "id": 8,
+                "title": "SENTIMENT ANALYSIS SYSTEM",
+                "project": "Hệ thống phân tích cảm xúc bình luận",
+                "lang": "Python, VueJS, CSS, JavaScript",
+                "framework": "Flask",
+                "link": "https://github.com/pisceskibo/SentimentAnalysisSystem"
+            }
+        ]
+    }
+]
