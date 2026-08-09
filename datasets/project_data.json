@@ -128,6 +128,14 @@
                 "lang": "Python, VueJS, CSS, JavaScript",
                 "framework": "Flask",
                 "link": "https://github.com/pisceskibo/SentimentAnalysisSystem"
+            },
+            {
+                "id": 9,
+                "title": "INSTAGRAM REACH ANALYSIS SYSTEM",
+                "project": "Hệ thống dự đoán chiến lược truyền thông Instagram",
+                "lang": "Python, HTML",
+                "framework": "CherryPy",
+                "link": "https://github.com/pisceskibo/InstagramReachAnalysis"
             }
         ]
     }
