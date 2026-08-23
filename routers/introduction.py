@@ -24,9 +24,16 @@ def write_introduction():
     # 1. Tổng quan:
     st.markdown("### 1. Tổng quan:")
     st.write(
-        f'<div style="text-align: justify;">{info.get("summary")}</div><br>',
-        unsafe_allow_html=True
-    )
+    """
+    <div style="text-align: justify;">
+        Tôi là cử nhân chuyên ngành Toán Tin, có nền tảng vững chắc về Công nghệ Thông tin và đặc biệt 
+        quan tâm đến lĩnh vực xây dựng phát triển phần mềm. Hiện tại, tôi cũng đang là học viên cao học
+        trình độ Thạc sĩ Khoa học dữ liệu tại Đại học Quốc gia Hà Nội (VNU). Là người ham học hỏi, yêu thích 
+        sáng tạo và luôn chủ động tìm kiếm giải pháp hiệu quả cho các vấn đề thực tiễn. Tôi có định hướng 
+        trở thành Lập trình viên Python FullStack với khả năng phát triển ứng dụng đa lĩnh vực chuyên môn.
+    </div>
+    <br>
+    """, unsafe_allow_html=True)
 
     # 2. Thông tin chi tiết:
     st.markdown("### 2. Thông tin chi tiết:")
