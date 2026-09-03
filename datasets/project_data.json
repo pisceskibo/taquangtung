@@ -6,6 +6,15 @@
         "projects": [
             {
                 "id": 1,
+                "title": "COLO CAR3 MANAGEMENT",
+                "project": "Hệ thống quản lý và gia công phần mềm công nghệ xe ô tô",
+                "role": "Python Developer",
+                "lang": "Python",
+                "framework": "FastAPI",
+                "description": "Thiết kế phần mềm dịch vụ và kiểm thử API trong lĩnh vực quản lý phương tiện xe ô tô trên thị trường thế giới."
+            },
+            {
+                "id": 2,
                 "title": "SOCIAL ACCOUNT MANAGEMENT",
                 "project": "Hệ thống quản lý thông tin mạng xã hội",
                 "role": "Python Developer",
@@ -14,7 +23,7 @@
                 "description": "Thiết kế hệ thống tổng hợp dữ liệu tài khoản mạng xã hội và tạo báo cáo thống kê danh mục tài khoản."
             },
             {
-                "id": 2,
+                "id": 3,
                 "title": "AUTOMOTIVE TESTING TOOL OF CANOE FOR LINUX DEVICE",
                 "project": "Hệ thống xử lý và kiểm thử ô tô của CANoe trên thiết bị LINUX",
                 "role": "Python Developer",
@@ -23,7 +32,7 @@
                 "description": "Xây dựng và phát triển ứng dụng Software/Firmware hỗ trợ cho việc kiểm thử tự động hóa quá trình tổng hợp các lỗi sửa sai trên thiết bị xe ô tô."
             },
             {
-                "id": 3,
+                "id": 4,
                 "title": "MULTILINGUAL ZOOM MEETING MINUTES EXTRACTION",
                 "project": "Hệ thống trích xuất và trao đổi cuộc họp Meeting đa ngôn ngữ",
                 "role": "Python Developer",
@@ -32,7 +41,7 @@
                 "description": "Phát triển các tính năng cuộc họp cốt lõi bao gồm việc truyền phát dữ liệu âm thanh/video chất lượng cao theo thời gian thực."
             },
             {
-                "id": 4,
+                "id": 5,
                 "title": "SOCIAL BLOG MANAGEMENT SYSTEM",
                 "project": "Hệ thống quản lý bài đăng mạng xã hội",
                 "role": "Python Developer",
@@ -41,7 +50,7 @@
                 "description": "Thiết kế hệ thống quản lý và kiếm soát các bài đăng trên mạng xã hội có kiểm duyệt theo tiêu chuẩn cộng đồng."
             },
             {
-                "id": 5,
+                "id": 6,
                 "title": "LEAVE HUB ATTENDANCE SYSTEM WITH HRMS",
                 "project": "Hệ thống quản lý chấm công và nghỉ phép của nhân viên",
                 "role": "Python Developer",
@@ -50,7 +59,7 @@
                 "description": "Thiết kế hệ thống Website quản lý chấm công, thời gian làm việc và các đơn xin nghỉ phép của nhân viên trong công ty."
             },
             {
-                "id": 6,
+                "id": 7,
                 "title": "NEXT SUPPLY CHAIN MANAGEMENT OF NSCM",
                 "project": "Hệ thống quản lý chuỗi cung ứng thế hệ mới",
                 "role": "Python Developer",
